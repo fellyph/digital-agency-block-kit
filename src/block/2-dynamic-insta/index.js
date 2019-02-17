@@ -12,7 +12,7 @@ const { Fragment } = wp.element;
 
 registerBlockType( 'agencykit/dynamic-insta', {
 
-	title: __( 'Social Card' ),
+	title: __( 'Dynamic Social Card' ),
 	icon: 'shield',
 	category: 'common',
 	keywords: [
@@ -45,12 +45,14 @@ registerBlockType( 'agencykit/dynamic-insta', {
 		);
 	},
 
-	save: ( { attributes } ) => {
+	save: ( { attributes, className } ) => {
 		const { instagramUser } = attributes;
 		return (
-			<div data-user={ instagramUser }>
-				<h3>{ __( 'Instagram user' ) }</h3>
-				<a href={ 'http://instagram.com/' + instagramUser }> { instagramUser } </a>
+			<div className={ className } data-user={ instagramUser }>
+				<h3 className="title">
+					<a href={ 'http://instagram.com/' + instagramUser }>
+						{ __( 'Follow me: ' ) } { instagramUser } </a>
+				</h3>
 			</div>
 		);
 	},

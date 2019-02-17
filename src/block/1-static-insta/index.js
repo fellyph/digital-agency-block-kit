@@ -18,7 +18,7 @@ registerBlockType( 'agencykit/static-insta', {
 	edit: ( { className } ) => {
 		return (
 			<div className={ className }>
-				<h3 className={ className + '__title' }>{ __( 'Instagram profile' ) }</h3>
+				<h3 className={ 'title' }>{ __( 'Instagram profile' ) }</h3>
 			</div>
 		);
 	},
@@ -26,7 +26,9 @@ registerBlockType( 'agencykit/static-insta', {
 	save: ( { className } ) => {
 		return (
 			<div className={ className }>
-				<h3 className={ className + '__title' }><a href="http://instagram.com/fellyph"> { __( 'Follow me' ) }</a></h3>
+				<h3 className={ 'title' }>
+					<a href="http://instagram.com/fellyph"> { __( 'Follow me' ) }</a>
+				</h3>
 			</div>
 		);
 	},

@@ -1,14 +1,26 @@
-/**
- * #.# Styles
- *
- * CSS for both Frontend+Backend.
- */
+$icon-url: '../../assets/img/instagram-icon.svg';
 
-.wp-block-cgb-block-products  {
-  background: $red;
-  border: 0.2rem solid $black;
-  color: $black;
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 2rem;
+.wp-block-agencykit-dynamic-insta  {
+	background: linear-gradient( #400080, transparent),
+							linear-gradient( 200deg, #d047d1, #ff0000,    #ffff00);
+	padding: 2em 1em;
+
+	.title {
+		color: white;
+		&:before {
+			content: "";
+			background: url($icon-url);
+			height: 50px;
+			width: 50px;
+			background-size: contain;
+		}
+
+		a {
+			color: white;
+			text-transform: none;
+			&:hover {
+				text-transform: underline;
+			}
+		}
+	}
 }
