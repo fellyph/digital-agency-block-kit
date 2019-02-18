@@ -1,3 +1,4 @@
+import './style.scss';
 
 const { __ } = wp.i18n; // Import __() from wp.i18n
 const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks
@@ -106,12 +107,17 @@ registerBlockType( 'agencykit/testimonials', {
 		);
 	},
 
-	save: ( { className } ) => {
+	save: ( { attributes, className } ) => {
+		const { testimonials } = attributes;
+		const testimonialsOutput = testimonials.map( ( testimonial, index ) => (
+			<div className="testimonial-item" key={ index }>
+				<blockquote className="quote">{ testimonial.message }</blockquote>
+				<h4 className="author">{ testimonial.author }</h4>
+			</div>
+		) );
 		return (
 			<div className={ className }>
-				<h3 className={ 'title' }>
-					<a href="http://instagram.com/fellyph"> { __( 'Follow me' ) }</a>
-				</h3>
+				{ testimonialsOutput }
 			</div>
 		);
 	},
