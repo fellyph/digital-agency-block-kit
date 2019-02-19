@@ -2,7 +2,7 @@
 	"presets": [ "@wordpress/default" ],
 	"plugins": [
 		[ "@wordpress/babel-plugin-makepot", {
-			"output": "languages/jsforwpadvblocks.pot"
+			"output": "languages/agencykit.pot"
 		} ],
 		"transform-class-properties"
 	]

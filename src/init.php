@@ -69,9 +69,9 @@ add_action( 'enqueue_block_editor_assets', 'products_cgb_editor_assets' );
 function frontend_assets() {
 	wp_enqueue_script(
 		'agency-kit-js',
-		plugins_url( '/dist/js/blocks.frontend.js', dirname( __FILE__ ) ),
+		plugins_url( '/dist/blocks.frontend.js', dirname( __FILE__ ) ),
 		array('wp-element'),
-		filemtime( _get_plugin_directory() . $frontend_js_path ),
+		filemtime( plugin_dir_path( __DIR__ )  . '/dist/blocks.frontend.js' ),
 		true
 	);
 }

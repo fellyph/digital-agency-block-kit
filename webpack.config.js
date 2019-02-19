@@ -29,8 +29,8 @@ const extractConfig = {
 
 module.exports = {
 	entry: {
-		'./assets/js/blocks.editor': './blocks/blocks.js',
-		'./assets/js/blocks.frontend': './blocks/frontend.js',
+		'./assets/js/blocks.editor': './src/blocks.js',
+		'./assets/js/blocks.frontend': './src/frontend.js',
 	},
 	output: {
 		path: path.resolve(__dirname),
@@ -58,11 +58,7 @@ module.exports = {
 		{
 			test: /editor\.s?css$/,
 			use: editBlocksCSSPlugin.extract(extractConfig),
-		},
-		{
-			test: /common\.s?css$/,
-			use: commonCSSPlugin.extract(extractConfig),
-		} ],
+		}],
 	},
-	plugins: [blocksCSSPlugin, editBlocksCSSPlugin, commonCSSPlugin]
+	plugins: [blocksCSSPlugin, editBlocksCSSPlugin]
 };

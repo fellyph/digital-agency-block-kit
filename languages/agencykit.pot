@@ -1,0 +1,76 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"X-Generator: babel-plugin-makepot\n"
+
+#: src/block/1-static-insta/index.js:13
+#: src/block/2-dynamic-insta/index.js:19
+msgid "Social"
+msgstr ""
+
+#: src/block/1-static-insta/index.js:14
+#: src/block/2-dynamic-insta/index.js:20
+msgid "Social media"
+msgstr ""
+
+#: src/block/1-static-insta/index.js:15
+#: src/block/2-dynamic-insta/index.js:21
+msgid "Instagram"
+msgstr ""
+
+#: src/block/1-static-insta/index.js:21
+msgid "Instagram profile"
+msgstr ""
+
+#: src/block/1-static-insta/index.js:30
+msgid "Follow me"
+msgstr ""
+
+#: src/block/1-static-insta/index.js:9
+msgid "Social Card"
+msgstr ""
+
+#: src/block/2-dynamic-insta/index.js:15
+msgid "Dynamic Social Card"
+msgstr ""
+
+#: src/block/2-dynamic-insta/index.js:36
+msgid "InstaBlock"
+msgstr ""
+
+#: src/block/2-dynamic-insta/index.js:41
+#: src/block/3-testimonials/index.js:72
+msgid "Add your instagram user here"
+msgstr ""
+
+#: src/block/2-dynamic-insta/index.js:54
+msgid "Follow me: "
+msgstr ""
+
+#: src/block/3-testimonials/index.js:103
+msgid "Testimonial"
+msgstr ""
+
+#: src/block/3-testimonials/index.js:105
+msgid "Add new testimonial"
+msgstr ""
+
+#: src/block/3-testimonials/index.js:21
+msgid "Testimonials"
+msgstr ""
+
+#: src/block/3-testimonials/index.js:22
+msgid "Agencykit"
+msgstr ""
+
+#: src/block/3-testimonials/index.js:48
+msgid "Testimonial: "
+msgstr ""
+
+#: src/block/3-testimonials/index.js:52
+msgid "Add author name"
+msgstr ""
+
+#: src/block/3-testimonials/index.js:64
+msgid "Remove"
+msgstr ""
