@@ -70,10 +70,13 @@ function frontend_assets() {
 	wp_enqueue_script(
 		'agency-kit-js',
 		plugins_url( 'dist/blocks.frontend.js', dirname( __FILE__ ) ),
-		array('wp-element'),
+		array('wp-element', 'jquery'),
 		filemtime( plugin_dir_path( __DIR__ )  . 'dist/blocks.frontend.js' ),
 		true
 	);
+
+	wp_register_style( 'slick_css', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css' );
+	wp_enqueue_style('slick_css');
 }
 
 add_action( "wp_enqueue_scripts", 'frontend_assets' );

@@ -95,6 +95,8 @@ module.exports = jQuery;
 
 __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.wp-block-agencykit-testimonials').slick();
 
+console.log('lendo');
+
 /***/ }),
 
 /***/ 70:
