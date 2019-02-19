@@ -1,1 +1,1 @@
-import './block/3-testimonials';
+import './block/3-testimonials/frontend';
