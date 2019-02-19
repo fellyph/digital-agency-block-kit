@@ -62,3 +62,18 @@ function products_cgb_editor_assets() { // phpcs:ignore
 
 // Hook: Editor assets.
 add_action( 'enqueue_block_editor_assets', 'products_cgb_editor_assets' );
+
+/**
+ * Enqueue block frontend JavaScript
+ */
+function frontend_assets() {
+	wp_enqueue_script(
+		'agency-kit-js',
+		plugins_url( '/dist/js/blocks.frontend.js', dirname( __FILE__ ) ),
+		array('wp-element'),
+		filemtime( _get_plugin_directory() . $frontend_js_path ),
+		true
+	);
+}
+
+add_action( "wp_enqueue_scripts", 'frontend_assets' );

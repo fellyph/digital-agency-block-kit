@@ -1,16 +1,39 @@
 {
   "name": "agency-kit-cgb-guten-block",
   "version": "1.0.0",
-  "author": "fellyph",
-  "private": true,
+  "license": "MIT",
+  "main": "blocks/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fellyph/digital-agency-block-kit.git"
+  },
   "scripts": {
-    "start": "cgb-scripts start",
-    "build": "cgb-scripts build",
-    "eject": "cgb-scripts eject"
+    "start": "cross-env webpack --watch",
+    "build": "cross-env NODE_ENV=production webpack -p"
+  },
+  "devDependencies": {
+    "@wordpress/babel-plugin-makepot": "^2.1.2",
+    "@wordpress/babel-preset-default": "^1.2.0",
+    "@wordpress/eslint-plugin": "^1.0.1",
+    "autoprefixer": "^9.4.7",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "classnames": "^2.2.6",
+    "cross-env": "^5.1.5",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.19.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "node-sass": "^4.9.0",
+    "postcss-loader": "^2.1.5",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.19.1",
+    "webpack": "^3.11.0"
   },
   "dependencies": {
-    "cgb-scripts": "^1.15.0",
-    "react-instagram-embed": "^1.5.0",
-    "slick-carousel": "^1.8.1"
+    "react-images": "^0.5.19",
+    "react-photo-gallery": "^6.3.0"
   }
 }
