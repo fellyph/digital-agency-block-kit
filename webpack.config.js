@@ -37,6 +37,7 @@ module.exports = {
 		filename: '[name].js'
 	},
 	externals: {
+		wp: 'wp',
 		react: 'React', // React itself is there in Gutenberg.
 		jquery: 'jQuery', // import $ from 'jquery' // Use the WordPress version after enqueuing it.
 		'react-dom': 'ReactDOM',

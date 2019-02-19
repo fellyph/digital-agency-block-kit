@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 62);
+/******/ 	return __webpack_require__(__webpack_require__.s = 30);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -119,8 +119,8 @@ module.exports = __webpack_require__(6) ? function (object, key, value) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var anObject = __webpack_require__(5);
-var IE8_DOM_DEFINE = __webpack_require__(37);
-var toPrimitive = __webpack_require__(38);
+var IE8_DOM_DEFINE = __webpack_require__(43);
+var toPrimitive = __webpack_require__(44);
 var dP = Object.defineProperty;
 
 exports.f = __webpack_require__(6) ? Object.defineProperty : function defineProperty(O, P, Attributes) {
@@ -335,7 +335,7 @@ module.exports = true;
 /***/ (function(module, exports, __webpack_require__) {
 
 // optional / simple context binding
-var aFunction = __webpack_require__(36);
+var aFunction = __webpack_require__(42);
 module.exports = function (fn, that, length) {
   aFunction(fn);
   if (that === undefined) return fn;
@@ -374,7 +374,7 @@ module.exports = function (it) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.14 / 15.2.3.14 Object.keys(O)
-var $keys = __webpack_require__(43);
+var $keys = __webpack_require__(49);
 var enumBugKeys = __webpack_require__(27);
 
 module.exports = Object.keys || function keys(O) {
@@ -482,15 +482,192 @@ module.exports = function (it, tag, stat) {
 
 
 /***/ }),
-/* 29 */
+/* 29 */,
+/* 30 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_toConsumableArray__ = __webpack_require__(30);
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__block_1_static_insta_index__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__block_2_dynamic_insta_index__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__block_3_testimonials_index__ = __webpack_require__(35);
+/**
+ * Gutenberg Blocks
+ *
+ * All blocks related JavaScript files should be imported here.
+ * You can create a new block folder in this dir and include code
+ * for that block here as well.
+ *
+ * All blocks should be included here since this is the file that
+ * Webpack is compiling as the input file.
+ */
+
+
+
+
+
+/***/ }),
+/* 31 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_scss__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__style_scss__);
+//  Import CSS.
+
+
+var __ = wp.i18n.__; // Import __() from wp.i18n
+
+var registerBlockType = wp.blocks.registerBlockType; // Import registerBlockType() from wp.blocks
+
+registerBlockType('agencykit/static-insta', {
+
+	title: __('Social Card'),
+	icon: 'shield',
+	category: 'common',
+	keywords: [__('Social'), __('Social media'), __('Instagram')],
+
+	edit: function edit(_ref) {
+		var className = _ref.className;
+
+		return wp.element.createElement(
+			'div',
+			{ className: className },
+			wp.element.createElement(
+				'h3',
+				{ className: 'title' },
+				__('Instagram profile')
+			)
+		);
+	},
+
+	save: function save(_ref2) {
+		var className = _ref2.className;
+
+		return wp.element.createElement(
+			'div',
+			{ className: className },
+			wp.element.createElement(
+				'h3',
+				{ className: 'title' },
+				wp.element.createElement(
+					'a',
+					{ href: 'http://instagram.com/fellyph' },
+					' ',
+					__('Follow me')
+				)
+			)
+		);
+	}
+});
+
+/***/ }),
+/* 32 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 33 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_scss__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__style_scss__);
+//  Import CSS.
+
+
+var __ = wp.i18n.__; // Import __() from wp.i18n
+
+var registerBlockType = wp.blocks.registerBlockType; // Import registerBlockType() from wp.blocks
+
+var _wp$components = wp.components,
+    TextControl = _wp$components.TextControl,
+    PanelBody = _wp$components.PanelBody,
+    PanelRow = _wp$components.PanelRow;
+var Fragment = wp.element.Fragment;
+
+
+registerBlockType('agencykit/dynamic-insta', {
+
+	title: __('Dynamic Social Card'),
+	icon: 'shield',
+	category: 'common',
+	keywords: [__('Social'), __('Social media'), __('Instagram')],
+
+	attributes: {
+		instagramUser: {
+			type: 'string',
+			default: 'fellyph'
+		}
+	},
+
+	edit: function edit(_ref) {
+		var attributes = _ref.attributes,
+		    setAttributes = _ref.setAttributes;
+		var instagramUser = attributes.instagramUser;
+
+
+		return wp.element.createElement(
+			Fragment,
+			null,
+			wp.element.createElement(
+				PanelBody,
+				{ title: __('InstaBlock'), initialOpen: true },
+				wp.element.createElement(
+					PanelRow,
+					null,
+					wp.element.createElement(TextControl, {
+						value: instagramUser,
+						onChange: function onChange(newUser) {
+							return setAttributes({ instagramUser: newUser });
+						},
+						label: __('Add your instagram user here') })
+				)
+			)
+		);
+	},
+
+	save: function save(_ref2) {
+		var attributes = _ref2.attributes,
+		    className = _ref2.className;
+		var instagramUser = attributes.instagramUser;
+
+		return wp.element.createElement(
+			'div',
+			{ className: className, 'data-user': instagramUser },
+			wp.element.createElement(
+				'h3',
+				{ className: 'title' },
+				wp.element.createElement(
+					'a',
+					{ href: 'http://instagram.com/' + instagramUser },
+					__('Follow me: '),
+					' ',
+					instagramUser,
+					' '
+				)
+			)
+		);
+	}
+});
+
+/***/ }),
+/* 34 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 35 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_toConsumableArray__ = __webpack_require__(36);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_toConsumableArray___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_toConsumableArray__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_assign__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_assign__ = __webpack_require__(61);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_assign__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_scss__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_scss__ = __webpack_require__(67);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__style_scss__);
 
 
@@ -648,7 +825,7 @@ registerBlockType('agencykit/testimonials', {
 });
 
 /***/ }),
-/* 30 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -656,7 +833,7 @@ registerBlockType('agencykit/testimonials', {
 
 exports.__esModule = true;
 
-var _from = __webpack_require__(31);
+var _from = __webpack_require__(37);
 
 var _from2 = _interopRequireDefault(_from);
 
@@ -675,30 +852,30 @@ exports.default = function (arr) {
 };
 
 /***/ }),
-/* 31 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(32), __esModule: true };
+module.exports = { "default": __webpack_require__(38), __esModule: true };
 
 /***/ }),
-/* 32 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(33);
-__webpack_require__(48);
+__webpack_require__(39);
+__webpack_require__(54);
 module.exports = __webpack_require__(2).Array.from;
 
 
 /***/ }),
-/* 33 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var $at = __webpack_require__(34)(true);
+var $at = __webpack_require__(40)(true);
 
 // 21.1.3.27 String.prototype[@@iterator]()
-__webpack_require__(35)(String, 'String', function (iterated) {
+__webpack_require__(41)(String, 'String', function (iterated) {
   this._t = String(iterated); // target
   this._i = 0;                // next index
 // 21.1.5.2.1 %StringIteratorPrototype%.next()
@@ -714,7 +891,7 @@ __webpack_require__(35)(String, 'String', function (iterated) {
 
 
 /***/ }),
-/* 34 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var toInteger = __webpack_require__(8);
@@ -737,19 +914,19 @@ module.exports = function (TO_STRING) {
 
 
 /***/ }),
-/* 35 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var LIBRARY = __webpack_require__(17);
 var $export = __webpack_require__(10);
-var redefine = __webpack_require__(39);
+var redefine = __webpack_require__(45);
 var hide = __webpack_require__(3);
 var Iterators = __webpack_require__(14);
-var $iterCreate = __webpack_require__(40);
+var $iterCreate = __webpack_require__(46);
 var setToStringTag = __webpack_require__(28);
-var getPrototypeOf = __webpack_require__(47);
+var getPrototypeOf = __webpack_require__(53);
 var ITERATOR = __webpack_require__(0)('iterator');
 var BUGGY = !([].keys && 'next' in [].keys()); // Safari has buggy iterators w/o `next`
 var FF_ITERATOR = '@@iterator';
@@ -813,7 +990,7 @@ module.exports = function (Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCE
 
 
 /***/ }),
-/* 36 */
+/* 42 */
 /***/ (function(module, exports) {
 
 module.exports = function (it) {
@@ -823,7 +1000,7 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 37 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = !__webpack_require__(6) && !__webpack_require__(12)(function () {
@@ -832,7 +1009,7 @@ module.exports = !__webpack_require__(6) && !__webpack_require__(12)(function ()
 
 
 /***/ }),
-/* 38 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.1.1 ToPrimitive(input [, PreferredType])
@@ -850,19 +1027,19 @@ module.exports = function (it, S) {
 
 
 /***/ }),
-/* 39 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(3);
 
 
 /***/ }),
-/* 40 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var create = __webpack_require__(41);
+var create = __webpack_require__(47);
 var descriptor = __webpack_require__(13);
 var setToStringTag = __webpack_require__(28);
 var IteratorPrototype = {};
@@ -877,12 +1054,12 @@ module.exports = function (Constructor, NAME, next) {
 
 
 /***/ }),
-/* 41 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
 var anObject = __webpack_require__(5);
-var dPs = __webpack_require__(42);
+var dPs = __webpack_require__(48);
 var enumBugKeys = __webpack_require__(27);
 var IE_PROTO = __webpack_require__(15)('IE_PROTO');
 var Empty = function () { /* empty */ };
@@ -897,7 +1074,7 @@ var createDict = function () {
   var gt = '>';
   var iframeDocument;
   iframe.style.display = 'none';
-  __webpack_require__(46).appendChild(iframe);
+  __webpack_require__(52).appendChild(iframe);
   iframe.src = 'javascript:'; // eslint-disable-line no-script-url
   // createDict = iframe.contentWindow.Object;
   // html.removeChild(iframe);
@@ -924,7 +1101,7 @@ module.exports = Object.create || function create(O, Properties) {
 
 
 /***/ }),
-/* 42 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var dP = __webpack_require__(4);
@@ -943,12 +1120,12 @@ module.exports = __webpack_require__(6) ? Object.defineProperties : function def
 
 
 /***/ }),
-/* 43 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var has = __webpack_require__(7);
 var toIObject = __webpack_require__(21);
-var arrayIndexOf = __webpack_require__(44)(false);
+var arrayIndexOf = __webpack_require__(50)(false);
 var IE_PROTO = __webpack_require__(15)('IE_PROTO');
 
 module.exports = function (object, names) {
@@ -966,14 +1143,14 @@ module.exports = function (object, names) {
 
 
 /***/ }),
-/* 44 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // false -> Array#indexOf
 // true  -> Array#includes
 var toIObject = __webpack_require__(21);
 var toLength = __webpack_require__(24);
-var toAbsoluteIndex = __webpack_require__(45);
+var toAbsoluteIndex = __webpack_require__(51);
 module.exports = function (IS_INCLUDES) {
   return function ($this, el, fromIndex) {
     var O = toIObject($this);
@@ -995,7 +1172,7 @@ module.exports = function (IS_INCLUDES) {
 
 
 /***/ }),
-/* 45 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var toInteger = __webpack_require__(8);
@@ -1008,7 +1185,7 @@ module.exports = function (index, length) {
 
 
 /***/ }),
-/* 46 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var document = __webpack_require__(1).document;
@@ -1016,7 +1193,7 @@ module.exports = document && document.documentElement;
 
 
 /***/ }),
-/* 47 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)
@@ -1035,7 +1212,7 @@ module.exports = Object.getPrototypeOf || function (O) {
 
 
 /***/ }),
-/* 48 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1043,13 +1220,13 @@ module.exports = Object.getPrototypeOf || function (O) {
 var ctx = __webpack_require__(18);
 var $export = __webpack_require__(10);
 var toObject = __webpack_require__(16);
-var call = __webpack_require__(49);
-var isArrayIter = __webpack_require__(50);
+var call = __webpack_require__(55);
+var isArrayIter = __webpack_require__(56);
 var toLength = __webpack_require__(24);
-var createProperty = __webpack_require__(51);
-var getIterFn = __webpack_require__(52);
+var createProperty = __webpack_require__(57);
+var getIterFn = __webpack_require__(58);
 
-$export($export.S + $export.F * !__webpack_require__(54)(function (iter) { Array.from(iter); }), 'Array', {
+$export($export.S + $export.F * !__webpack_require__(60)(function (iter) { Array.from(iter); }), 'Array', {
   // 22.1.2.1 Array.from(arrayLike, mapfn = undefined, thisArg = undefined)
   from: function from(arrayLike /* , mapfn = undefined, thisArg = undefined */) {
     var O = toObject(arrayLike);
@@ -1079,7 +1256,7 @@ $export($export.S + $export.F * !__webpack_require__(54)(function (iter) { Array
 
 
 /***/ }),
-/* 49 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // call something on iterator step with safe closing on error
@@ -1097,7 +1274,7 @@ module.exports = function (iterator, fn, value, entries) {
 
 
 /***/ }),
-/* 50 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // check on default Array iterator
@@ -1111,7 +1288,7 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 51 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1126,10 +1303,10 @@ module.exports = function (object, index, value) {
 
 
 /***/ }),
-/* 52 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var classof = __webpack_require__(53);
+var classof = __webpack_require__(59);
 var ITERATOR = __webpack_require__(0)('iterator');
 var Iterators = __webpack_require__(14);
 module.exports = __webpack_require__(2).getIteratorMethod = function (it) {
@@ -1140,7 +1317,7 @@ module.exports = __webpack_require__(2).getIteratorMethod = function (it) {
 
 
 /***/ }),
-/* 53 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // getting tag from 19.1.3.6 Object.prototype.toString()
@@ -1169,7 +1346,7 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 54 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var ITERATOR = __webpack_require__(0)('iterator');
@@ -1197,39 +1374,39 @@ module.exports = function (exec, skipClosing) {
 
 
 /***/ }),
-/* 55 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(56), __esModule: true };
+module.exports = { "default": __webpack_require__(62), __esModule: true };
 
 /***/ }),
-/* 56 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(57);
+__webpack_require__(63);
 module.exports = __webpack_require__(2).Object.assign;
 
 
 /***/ }),
-/* 57 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.3.1 Object.assign(target, source)
 var $export = __webpack_require__(10);
 
-$export($export.S + $export.F, 'Object', { assign: __webpack_require__(58) });
+$export($export.S + $export.F, 'Object', { assign: __webpack_require__(64) });
 
 
 /***/ }),
-/* 58 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 // 19.1.2.1 Object.assign(target, source, ...)
 var getKeys = __webpack_require__(20);
-var gOPS = __webpack_require__(59);
-var pIE = __webpack_require__(60);
+var gOPS = __webpack_require__(65);
+var pIE = __webpack_require__(66);
 var toObject = __webpack_require__(16);
 var IObject = __webpack_require__(22);
 var $assign = Object.assign;
@@ -1262,197 +1439,21 @@ module.exports = !$assign || __webpack_require__(12)(function () {
 
 
 /***/ }),
-/* 59 */
+/* 65 */
 /***/ (function(module, exports) {
 
 exports.f = Object.getOwnPropertySymbols;
 
 
 /***/ }),
-/* 60 */
+/* 66 */
 /***/ (function(module, exports) {
 
 exports.f = {}.propertyIsEnumerable;
 
 
 /***/ }),
-/* 61 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 62 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__block_1_static_insta_index__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__block_2_dynamic_insta_index__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__block_3_testimonials_index__ = __webpack_require__(29);
-/**
- * Gutenberg Blocks
- *
- * All blocks related JavaScript files should be imported here.
- * You can create a new block folder in this dir and include code
- * for that block here as well.
- *
- * All blocks should be included here since this is the file that
- * Webpack is compiling as the input file.
- */
-
-
-
-
-
-/***/ }),
-/* 63 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_scss__ = __webpack_require__(64);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__style_scss__);
-//  Import CSS.
-
-
-var __ = wp.i18n.__; // Import __() from wp.i18n
-
-var registerBlockType = wp.blocks.registerBlockType; // Import registerBlockType() from wp.blocks
-
-registerBlockType('agencykit/static-insta', {
-
-	title: __('Social Card'),
-	icon: 'shield',
-	category: 'common',
-	keywords: [__('Social'), __('Social media'), __('Instagram')],
-
-	edit: function edit(_ref) {
-		var className = _ref.className;
-
-		return wp.element.createElement(
-			'div',
-			{ className: className },
-			wp.element.createElement(
-				'h3',
-				{ className: 'title' },
-				__('Instagram profile')
-			)
-		);
-	},
-
-	save: function save(_ref2) {
-		var className = _ref2.className;
-
-		return wp.element.createElement(
-			'div',
-			{ className: className },
-			wp.element.createElement(
-				'h3',
-				{ className: 'title' },
-				wp.element.createElement(
-					'a',
-					{ href: 'http://instagram.com/fellyph' },
-					' ',
-					__('Follow me')
-				)
-			)
-		);
-	}
-});
-
-/***/ }),
-/* 64 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 65 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_scss__ = __webpack_require__(66);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__style_scss__);
-//  Import CSS.
-
-
-var __ = wp.i18n.__; // Import __() from wp.i18n
-
-var registerBlockType = wp.blocks.registerBlockType; // Import registerBlockType() from wp.blocks
-
-var _wp$components = wp.components,
-    TextControl = _wp$components.TextControl,
-    PanelBody = _wp$components.PanelBody,
-    PanelRow = _wp$components.PanelRow;
-var Fragment = wp.element.Fragment;
-
-
-registerBlockType('agencykit/dynamic-insta', {
-
-	title: __('Dynamic Social Card'),
-	icon: 'shield',
-	category: 'common',
-	keywords: [__('Social'), __('Social media'), __('Instagram')],
-
-	attributes: {
-		instagramUser: {
-			type: 'string',
-			default: 'fellyph'
-		}
-	},
-
-	edit: function edit(_ref) {
-		var attributes = _ref.attributes,
-		    setAttributes = _ref.setAttributes;
-		var instagramUser = attributes.instagramUser;
-
-
-		return wp.element.createElement(
-			Fragment,
-			null,
-			wp.element.createElement(
-				PanelBody,
-				{ title: __('InstaBlock'), initialOpen: true },
-				wp.element.createElement(
-					PanelRow,
-					null,
-					wp.element.createElement(TextControl, {
-						value: instagramUser,
-						onChange: function onChange(newUser) {
-							return setAttributes({ instagramUser: newUser });
-						},
-						label: __('Add your instagram user here') })
-				)
-			)
-		);
-	},
-
-	save: function save(_ref2) {
-		var attributes = _ref2.attributes,
-		    className = _ref2.className;
-		var instagramUser = attributes.instagramUser;
-
-		return wp.element.createElement(
-			'div',
-			{ className: className, 'data-user': instagramUser },
-			wp.element.createElement(
-				'h3',
-				{ className: 'title' },
-				wp.element.createElement(
-					'a',
-					{ href: 'http://instagram.com/' + instagramUser },
-					__('Follow me: '),
-					' ',
-					instagramUser,
-					' '
-				)
-			)
-		);
-	}
-});
-
-/***/ }),
-/* 66 */
+/* 67 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
