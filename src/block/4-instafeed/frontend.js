@@ -2,17 +2,18 @@ import InstagramEmbed from 'react-instagram-embed';
 import wp from 'wp';
 
 const { render } = wp.element;
-const instafeed = document.querySelector( '.wp-blocks-agencykit-instafeed' );
+const instafeed = document.querySelectorAll( '.wp-block-agencykit-instafeed' );
 
 instafeed.forEach( ( feed, index ) => {
-	const urlUserAccount = `https://instagr.am/${ feed.dataset.user }`;
-
+	const instagramId = `https://instagram.com/p/${ feed.dataset.user }`;
+	const embedWidth = feed.dataset.width;
 	render(
 		<InstagramEmbed key={ index }
-			url={ urlUserAccount }
-			maxWidth={ 320 }
+			url={ instagramId }
+			maxWidth={ embedWidth }
 			hideCaption={ false }
 			containerTagName="div"
-		/>
+		/>,
+		feed
 	);
 } );

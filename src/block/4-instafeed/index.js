@@ -1,5 +1,4 @@
 //  Import CSS.
-import './style.scss';
 import wp from 'wp';
 
 const { __ } = wp.i18n; // Import __() from wp.i18n
@@ -8,13 +7,14 @@ const {
 	TextControl,
 	PanelBody,
 	PanelRow,
+	RadioControl,
+	Panel,
 } = wp.components;
-const { Fragment } = wp.element;
 
 registerBlockType( 'agencykit/instafeed', {
 
-	title: __( 'Instagram Feed' ),
-	icon: 'shield',
+	title: __( 'Instagram Embed' ),
+	icon: 'camera',
 	category: 'common',
 	keywords: [
 		__( 'Social' ),
@@ -23,38 +23,58 @@ registerBlockType( 'agencykit/instafeed', {
 	],
 
 	attributes: {
-		instagramUser: {
+		instagramEmbedId: {
 			type: 'string',
-			default: 'fellyph',
+			default: 'Bsith47njvJ',
+		},
+		embedWidth: {
+			type: 'string',
+			default: '500',
 		},
 	},
 
 	edit: ( { attributes, setAttributes } ) => {
-		const { instagramUser } = attributes;
+		const { instagramEmbedId, embedWidth } = attributes;
 
 		return (
-			<Fragment>
-				<PanelBody title={ __( 'InstaBlock' ) } initialOpen={ true } >
+			<Panel header={ __( 'InstaBlock' ) }>
+				<PanelBody title={ __( 'add your photo here' ) }initialOpen={ true } >
 					<PanelRow>
 						<TextControl
-							value={ instagramUser }
+							value={ instagramEmbedId }
 							onChange={ ( newUser ) => {
-								setAttributes( { instagramUser: newUser } );
+								setAttributes( { instagramEmbedId: newUser } );
 							} }
 							label={ __( 'Add your instagram user here' ) } />
 					</PanelRow>
+					<PanelRow>
+						<RadioControl
+							label="Select the size"
+							selected={ embedWidth }
+							options={ [
+								{ label: __( 'Small' ), value: '300' },
+								{ label: __( 'Medium' ), value: '500' },
+								{ label: __( 'Medium' ), value: '700' },
+							] }
+							onChange={ ( newWidth ) => {
+								setAttributes( { embedWidth: newWidth } );
+							} }
+						/>
+					</PanelRow>
 				</PanelBody>
-			</Fragment>
+			</Panel>
 		);
 	},
 
 	save: ( { attributes, className } ) => {
-		const { instagramUser } = attributes;
+		const { instagramEmbedId, embedWidth } = attributes;
 		return (
-			<div className={ className } data-user={ instagramUser }>
+			<div className={ className }
+				data-user={ instagramEmbedId }
+				data-width={ embedWidth } >
 				<h3 className="title">
-					<a href={ 'http://instagram.com/' + instagramUser }>
-						{ __( 'Follow me: ' ) } { instagramUser } </a>
+					<a href={ `http://instagram.com/p/${ instagramEmbedId }` }>
+						{ __( 'Follow me: ' ) } { instagramEmbedId } </a>
 				</h3>
 			</div>
 		);
