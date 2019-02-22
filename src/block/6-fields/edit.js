@@ -11,7 +11,6 @@ const {
 	CheckboxControl,
 	RadioControl,
 	RangeControl,
-	TextControl,
 	TextareaControl,
 	ToggleControl,
 } = wp.components;
@@ -27,7 +26,6 @@ export default class Edit extends Component {
 				colorPaletteControl,
 				radioControl,
 				rangeControl,
-				textControl,
 				textareaControl,
 				toggleControl,
 			},
@@ -41,53 +39,47 @@ export default class Edit extends Component {
 					heading={ __( 'Checkbox Component' ) }
 					label={ __( 'Check it!' ) }
 					checked={ checkboxControl }
-					onChange={ ( checkboxControl ) => setAttributes( { checkboxControl } ) }
+					onChange={ ( newCheckboxControl ) => setAttributes( { checkboxControl: newCheckboxControl } ) }
 				/>
 
 				<ColorPalette
 					value={ colorPaletteControl }
-					onChange={ ( colorPaletteControl ) => setAttributes( { colorPaletteControl } ) }
+					onChange={ ( newColorPaletteControl ) => setAttributes( { colorPaletteControl: newColorPaletteControl } ) }
 				/>
 
 				<RadioControl
 					label={ __( 'Radio Component' ) }
 					selected={ radioControl }
 					options={ [ {
-						label: 'Author',
-						value: 'a',
+						label: 'Blanka',
+						value: 'blanka',
 					},
 					{
-						label: 'Editor',
-						value: 'e',
+						label: 'Ryu',
+						value: 'ryu',
 					},
 					] }
-					onChange={ (newradioControl) => setAttributes( { newradioControl } ) }
+					onChange={ ( newradioControl ) => setAttributes( { radioControl: newradioControl } ) }
 				/>
 
 				<RangeControl
 					label={ __( 'Range Component' ) }
 					value={ rangeControl }
-					onChange={ ( rangeControl ) => setAttributes( { rangeControl } ) }
+					onChange={ ( newrangeControl ) => setAttributes( { rangeControl: newrangeControl } ) }
 					min={ 1 }
 					max={ 10 }
-				/>
-
-				<TextControl label={ __( 'Text Control' ) }
-					help={ __( 'Text control help text' ) }
-					value={ textControl }
-					onChange={ ( textControl ) => setAttributes( { textControl } ) }
 				/>
 
 				<TextareaControl label={ __( 'Text Area Component' ) }
 					help={ __( 'Text area control help text' ) }
 					value={ textareaControl }
-					onChange={ ( textareaControl ) => setAttributes( { textareaControl } ) }
+					onChange={ ( newTextareaControl ) => setAttributes( { textareaControl: newTextareaControl } ) }
 				/>
 
 				<ToggleControl
 					label={ __( 'Toggle Component' ) }
 					checked={ toggleControl }
-					onChange={ ( toggleControl ) => setAttributes( { toggleControl } ) }
+					onChange={ ( newToggleControl ) => setAttributes( { toggleControl: newToggleControl } ) }
 				/>
 			</div>
 		);
