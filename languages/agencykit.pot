@@ -3,15 +3,15 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "X-Generator: babel-plugin-makepot\n"
 
-#: src/block/5-dynamic/index.js:69
+#: src/block/5-dynamic/index.js:68
 msgid "1"
 msgstr ""
 
-#: src/block/5-dynamic/index.js:70
+#: src/block/5-dynamic/index.js:69
 msgid "2"
 msgstr ""
 
-#: src/block/5-dynamic/index.js:71
+#: src/block/5-dynamic/index.js:70
 msgid "3"
 msgstr ""
 
@@ -62,7 +62,6 @@ msgstr ""
 
 #: src/block/2-dynamic-insta/index.js:54
 #: src/block/4-instafeed/index.js:77
-#: src/block/5-dynamic/index.js:94
 msgid "Follow me: "
 msgstr ""
 
@@ -118,10 +117,10 @@ msgstr ""
 msgid "No result"
 msgstr ""
 
-#: src/block/5-dynamic/index.js:62
+#: src/block/5-dynamic/index.js:61
 msgid "Character"
 msgstr ""
 
-#: src/block/5-dynamic/index.js:63
+#: src/block/5-dynamic/index.js:62
 msgid "List your favorite character"
 msgstr ""

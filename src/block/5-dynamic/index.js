@@ -50,7 +50,6 @@ registerBlockType( 'agencykit/dynamic-characters', {
 				<div>
 					{ posts.map( ( post, index ) => (
 						<figure key={ index } >
-							console.log(post);
 							<figcaption>{ post.title.rendered }</figcaption>
 						</figure>
 					) ) }
@@ -83,17 +82,8 @@ registerBlockType( 'agencykit/dynamic-characters', {
 		);
 	},
 
-	save: ( { attributes, className } ) => {
-		const { instagramEmbedId, embedWidth } = attributes;
-		return (
-			<div className={ className }
-				data-user={ instagramEmbedId }
-				data-width={ embedWidth } >
-				<h3 className="title">
-					<a href={ `http://instagram.com/p/${ instagramEmbedId }` }>
-						{ __( 'Follow me: ' ) } { instagramEmbedId } </a>
-				</h3>
-			</div>
-		);
+	save: () => {
+		// Rendering in PHP
+		return null;
 	},
 } );
