@@ -4,7 +4,6 @@
 
 import wp from 'wp';
 
-import Inspector from './inspector';
 import Edit from './edit';
 import globalAttributes from './attributes';
 import './style.scss';
@@ -28,10 +27,10 @@ function getSettings( attributes ) {
  * Register static block example block
  */
 export default registerBlockType( 'agencykit/form-fields', {
-	title: __( 'Example - Form Fields', 'agencykit' ),
+	title: __( 'Componentes Examples' ),
 	description: __( 'An example of how to use form component in a block.' ),
 	category: 'common',
-	icon: 'smile',
+	icon: 'block-icon',
 	keywords: [
 		__( 'Exemples' ),
 		__( 'Settings' ),
@@ -46,11 +45,7 @@ export default registerBlockType( 'agencykit/form-fields', {
 	},
 	edit: ( props ) => {
 		const { setAttributes } = props;
-
-		return [
-			<Inspector { ...{ setAttributes, ...props } } key={ 1 } />,
-			<Edit { ...{ setAttributes, ...props } } key={ 2 } />,
-		];
+		return ( <Edit { ...{ setAttributes, ...props } } /> );
 	},
 	save: ( props ) => {
 		const { attributes } = props;

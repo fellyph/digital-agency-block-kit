@@ -13,6 +13,11 @@ const {
 	RangeControl,
 	TextareaControl,
 	ToggleControl,
+	BaseControl,
+	TextControl,
+	Notice,
+	Spinner,
+	FormFileUpload,
 } = wp.components;
 
 /**
@@ -35,18 +40,40 @@ export default class Edit extends Component {
 
 		return (
 			<div className={ className } >
+				<Spinner />
+
+				<h5>{ __( 'File upload component' ) }</h5>
+				<FormFileUpload
+					accept="image/*"
+					onChange={ () => { } }
+				>
+					{ __( 'Upload image' ) }
+				</FormFileUpload>
+
+				<h5>{ __( 'Notice component' ) }</h5>
+				<Notice status="error">
+					{ __( 'Something wrong happen' ) }
+				</Notice>
+
+				<Notice status="success">
+					{ __( 'maybe is fine' ) }
+				</Notice>
+
+				<h5>{ __( 'Checkbox component' ) }</h5>
 				<CheckboxControl
 					heading={ __( 'Checkbox Component' ) }
 					label={ __( 'Check it!' ) }
 					checked={ checkboxControl }
-					onChange={ ( newCheckboxControl ) => setAttributes( { checkboxControl: newCheckboxControl } ) }
+					onChange={ () => { } }
 				/>
 
+				<h5>{ __( 'Color palette component' ) }</h5>
 				<ColorPalette
 					value={ colorPaletteControl }
-					onChange={ ( newColorPaletteControl ) => setAttributes( { colorPaletteControl: newColorPaletteControl } ) }
+					onChange={ () => { } }
 				/>
 
+				<h5>{ __( 'Radio component' ) }</h5>
 				<RadioControl
 					label={ __( 'Radio Component' ) }
 					selected={ radioControl }
@@ -59,9 +86,10 @@ export default class Edit extends Component {
 						value: 'ryu',
 					},
 					] }
-					onChange={ ( newradioControl ) => setAttributes( { radioControl: newradioControl } ) }
+					onChange={ () => { } }
 				/>
 
+				<h5>{ __( 'Range component' ) }</h5>
 				<RangeControl
 					label={ __( 'Range Component' ) }
 					value={ rangeControl }
@@ -70,16 +98,34 @@ export default class Edit extends Component {
 					max={ 10 }
 				/>
 
+				<h5>{ __( 'TextArea component' ) }</h5>
 				<TextareaControl label={ __( 'Text Area Component' ) }
-					help={ __( 'Text area control help text' ) }
+					help={ __( 'Text for some instruction' ) }
 					value={ textareaControl }
 					onChange={ ( newTextareaControl ) => setAttributes( { textareaControl: newTextareaControl } ) }
 				/>
 
+				<h5>{ __( 'Toggle component' ) }</h5>
 				<ToggleControl
 					label={ __( 'Toggle Component' ) }
 					checked={ toggleControl }
 					onChange={ ( newToggleControl ) => setAttributes( { toggleControl: newToggleControl } ) }
+				/>
+
+				<h5>{ __( 'Base Component' ) }</h5>
+				<BaseControl
+					id="textarea-1"
+					help="Enter some text"
+					label={ __( 'Base Component' ) }>
+
+					<textarea id="textarea-1" />
+				</BaseControl>
+
+				<h5>{ __( 'Text Component' ) }</h5>
+				<TextControl label={ __( 'Text Component' ) }
+					help={ __( 'Text for some instruction' ) }
+					value={ textareaControl }
+					onChange={ ( newTextareaControl ) => setAttributes( { textareaControl: newTextareaControl } ) }
 				/>
 			</div>
 		);
