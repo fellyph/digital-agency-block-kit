@@ -3,6 +3,18 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "X-Generator: babel-plugin-makepot\n"
 
+#: src/block/5-dynamic/index.js:69
+msgid "1"
+msgstr ""
+
+#: src/block/5-dynamic/index.js:70
+msgid "2"
+msgstr ""
+
+#: src/block/5-dynamic/index.js:71
+msgid "3"
+msgstr ""
+
 #: src/block/1-static-insta/index.js:13
 #: src/block/2-dynamic-insta/index.js:19
 #: src/block/4-instafeed/index.js:20
@@ -50,6 +62,7 @@ msgstr ""
 
 #: src/block/2-dynamic-insta/index.js:54
 #: src/block/4-instafeed/index.js:77
+#: src/block/5-dynamic/index.js:94
 msgid "Follow me: "
 msgstr ""
 
@@ -95,4 +108,20 @@ msgstr ""
 
 #: src/block/4-instafeed/index.js:57
 msgid "Medium"
+msgstr ""
+
+#: src/block/5-dynamic/index.js:23
+msgid "Characters"
+msgstr ""
+
+#: src/block/5-dynamic/index.js:47
+msgid "No result"
+msgstr ""
+
+#: src/block/5-dynamic/index.js:62
+msgid "Character"
+msgstr ""
+
+#: src/block/5-dynamic/index.js:63
+msgid "List your favorite character"
 msgstr ""

@@ -8,9 +8,12 @@ const {
 	PanelRow,
 	RadioControl,
 	Panel,
+	Spinner,
 } = wp.components;
 
-registerBlockType( 'agencykit/dynamic', {
+const { withSelect } = wp.data;
+
+registerBlockType( 'agencykit/dynamic-characters', {
 
 	title: __( 'Characters' ),
 	icon: 'admin-users',
@@ -30,6 +33,31 @@ registerBlockType( 'agencykit/dynamic', {
 	edit: ( { attributes, setAttributes } ) => {
 		const { quantity } = attributes;
 
+		const characters = withSelect( ( select ) => ( {
+			posts: select( 'core' ).getEntityRecords( 'postType', 'agency_product', { per_page: parseInt( quantity, 10 ) } ),
+		} ) )( ( { posts, className } ) => {
+			if ( ! posts ) {
+				return (
+					<div className={ className }>
+						<Spinner />
+					</div>
+				);
+			}
+			if ( 0 === posts.lenght ) {
+				return <PanelRow> { __( 'No result' ) } </PanelRow>;
+			}
+			return (
+				<div>
+					{ posts.map( ( post, index ) => (
+						<figure key={ index } >
+							console.log(post);
+							<figcaption>{ post.title.rendered }</figcaption>
+						</figure>
+					) ) }
+				</div>
+			);
+		} );
+
 		return (
 			<Panel header={ __( 'Character' ) }>
 				<PanelBody title={ __( 'List your favorite character' ) }initialOpen={ true } >
@@ -38,14 +66,17 @@ registerBlockType( 'agencykit/dynamic', {
 							label="Select the quantity"
 							selected={ quantity }
 							options={ [
-								{ label: __( 'Small' ), value: '1' },
-								{ label: __( 'Medium' ), value: '2' },
-								{ label: __( 'Medium' ), value: '3' },
+								{ label: __( '1' ), value: '1' },
+								{ label: __( '2' ), value: '2' },
+								{ label: __( '3' ), value: '3' },
 							] }
 							onChange={ ( newQuantity ) => {
 								setAttributes( { quantity: newQuantity } );
 							} }
 						/>
+					</PanelRow>
+					<PanelRow>
+						{ characters() }
 					</PanelRow>
 				</PanelBody>
 			</Panel>

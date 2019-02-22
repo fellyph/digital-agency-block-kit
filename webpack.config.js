@@ -43,7 +43,7 @@ module.exports = {
 		'react-dom': 'ReactDOM',
 	},
 	watch: 'production' !== process.env.NODE_ENV,
-	devtool: 'cheap-module-source-map',
+	devtool: 'inline-cheap-source-map',
 	module: {
 		rules: [ {
 			test: /\.js$/,
