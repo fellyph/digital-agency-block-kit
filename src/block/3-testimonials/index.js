@@ -1,4 +1,5 @@
 import './style.scss';
+import wp from 'wp';
 
 const { __ } = wp.i18n; // Import __() from wp.i18n
 const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks
@@ -50,19 +51,19 @@ registerBlockType( 'agencykit/testimonials', {
 					<TextControl
 						value={ testimonial.author }
 						label={ __( 'Add author name' ) }
-						onChange={ author => {
+						onChange={ ( author ) => {
 							const newTestimonial = Object.assign( {}, testimonial, {
 								author: author,
 							} );
 							setAttributes( {
 								testimonials: [
-									...testimonials.filter( item => item.id !== testimonial.id ),
+									...testimonials.filter( ( item ) => item.id !== testimonial.id ),
 									newTestimonial,
 								],
 							} );
 						} } />
 					<IconButton icon="trash" label={ __( 'Remove' ) } onClick={ () => {
-						const newTestimonialsList = testimonials.filter( item => item.id !== testimonial.id );
+						const newTestimonialsList = testimonials.filter( ( item ) => item.id !== testimonial.id );
 						setAttributes( { testimonials: newTestimonialsList } );
 					} } />
 				</PanelRow>
@@ -70,13 +71,13 @@ registerBlockType( 'agencykit/testimonials', {
 					<TextareaControl
 						value={ testimonial.message }
 						label={ __( 'Add your instagram user here' ) }
-						onChange={ message => {
+						onChange={ ( message ) => {
 							const newTestimonial = Object.assign( {}, testimonial, {
 								message: message,
 							} );
 							setAttributes( {
 								testimonials: [
-									...testimonials.filter( item => item.id !== testimonial.id ),
+									...testimonials.filter( ( item ) => item.id !== testimonial.id ),
 									newTestimonial,
 								],
 							} );

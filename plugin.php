@@ -18,6 +18,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
+ * Post type Initializer.
+ */
+require_once plugin_dir_path( __FILE__ ) . 'src/register_post_type.php';
+
+/**
  * Block Initializer.
  */
 require_once plugin_dir_path( __FILE__ ) . 'src/init.php';

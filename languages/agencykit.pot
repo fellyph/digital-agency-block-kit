@@ -1,0 +1,292 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"X-Generator: babel-plugin-makepot\n"
+
+#: src/block/5-dynamic/index.js:68
+msgid "1"
+msgstr ""
+
+#: src/block/5-dynamic/index.js:69
+msgid "2"
+msgstr ""
+
+#: src/block/5-dynamic/index.js:70
+msgid "3"
+msgstr ""
+
+#: src/block/1-static-insta/index.js:13
+#: src/block/2-dynamic-insta/index.js:19
+#: src/block/4-instafeed/index.js:20
+msgid "Social"
+msgstr ""
+
+#: src/block/1-static-insta/index.js:14
+#: src/block/2-dynamic-insta/index.js:20
+#: src/block/4-instafeed/index.js:21
+msgid "Social media"
+msgstr ""
+
+#: src/block/1-static-insta/index.js:15
+#: src/block/2-dynamic-insta/index.js:21
+#: src/block/4-instafeed/index.js:22
+msgid "Instagram"
+msgstr ""
+
+#: src/block/1-static-insta/index.js:21
+msgid "Instagram profile"
+msgstr ""
+
+#: src/block/1-static-insta/index.js:30
+msgid "Follow me"
+msgstr ""
+
+#: src/block/1-static-insta/index.js:9
+msgid "Social Card"
+msgstr ""
+
+#: src/block/2-dynamic-insta/index.js:15
+msgid "Dynamic Social Card"
+msgstr ""
+
+#: src/block/2-dynamic-insta/index.js:36
+#: src/block/4-instafeed/index.js:40
+msgid "InstaBlock"
+msgstr ""
+
+#: src/block/2-dynamic-insta/index.js:41
+#: src/block/3-testimonials/index.js:73
+#: src/block/3-testimonials/index.js:72
+#: src/block/4-instafeed/index.js:48
+msgid "Add your instagram user here"
+msgstr ""
+
+#: src/block/2-dynamic-insta/index.js:54
+#: src/block/4-instafeed/index.js:77
+msgid "Follow me: "
+msgstr ""
+
+#: src/block/3-testimonials/index.js:104
+msgid "Testimonial"
+msgstr ""
+
+#: src/block/3-testimonials/index.js:106
+msgid "Add new testimonial"
+msgstr ""
+
+#: src/block/3-testimonials/index.js:22
+msgid "Testimonials"
+msgstr ""
+
+#: src/block/3-testimonials/index.js:23
+msgid "Agencykit"
+msgstr ""
+
+#: src/block/3-testimonials/index.js:49
+msgid "Testimonial: "
+msgstr ""
+
+#: src/block/3-testimonials/index.js:53
+msgid "Add author name"
+msgstr ""
+
+#: src/block/3-testimonials/index.js:65
+msgid "Remove"
+msgstr ""
+
+#: src/block/4-instafeed/index.js:16
+msgid "Instagram Embed"
+msgstr ""
+
+#: src/block/4-instafeed/index.js:41
+msgid "add your photo here"
+msgstr ""
+
+#: src/block/4-instafeed/index.js:55
+msgid "Small"
+msgstr ""
+
+#: src/block/4-instafeed/index.js:57
+msgid "Medium"
+msgstr ""
+
+#: src/block/5-dynamic/index.js:23
+msgid "Characters"
+msgstr ""
+
+#: src/block/5-dynamic/index.js:47
+msgid "No result"
+msgstr ""
+
+#: src/block/5-dynamic/index.js:61
+msgid "Character"
+msgstr ""
+
+#: src/block/5-dynamic/index.js:62
+msgid "List your favorite character"
+msgstr ""
+
+#: src/block/6-fields/edit.js:101
+msgid "TextArea component"
+msgstr ""
+
+#: src/block/6-fields/edit.js:102
+msgid "Text Area Component"
+msgstr ""
+
+#: src/block/6-fields/edit.js:108
+msgid "Toggle component"
+msgstr ""
+
+#: src/block/6-fields/edit.js:110
+msgid "Toggle Component"
+msgstr ""
+
+#: src/block/6-fields/edit.js:119
+msgid "Base Component"
+msgstr ""
+
+#: src/block/6-fields/edit.js:125
+msgid "Text Component"
+msgstr ""
+
+#: src/block/6-fields/edit.js:126
+msgid "Text for some instruction"
+msgstr ""
+
+#: src/block/6-fields/edit.js:45
+msgid "File upload component"
+msgstr ""
+
+#: src/block/6-fields/edit.js:50
+msgid "Upload image"
+msgstr ""
+
+#: src/block/6-fields/edit.js:53
+msgid "Notice component"
+msgstr ""
+
+#: src/block/6-fields/edit.js:55
+msgid "Something wrong happen"
+msgstr ""
+
+#: src/block/6-fields/edit.js:59
+msgid "maybe is fine"
+msgstr ""
+
+#: src/block/6-fields/edit.js:62
+msgid "Checkbox component"
+msgstr ""
+
+#: src/block/6-fields/edit.js:64
+msgid "Checkbox Component"
+msgstr ""
+
+#: src/block/6-fields/edit.js:65
+msgid "Check it!"
+msgstr ""
+
+#: src/block/6-fields/edit.js:70
+msgid "Color palette component"
+msgstr ""
+
+#: src/block/6-fields/edit.js:76
+msgid "Radio component"
+msgstr ""
+
+#: src/block/6-fields/edit.js:78
+msgid "Radio Component"
+msgstr ""
+
+#: src/block/6-fields/edit.js:92
+msgid "Range component"
+msgstr ""
+
+#: src/block/6-fields/edit.js:94
+msgid "Range Component"
+msgstr ""
+
+#: src/block/6-fields/index.js:30
+msgid "Componentes Examples"
+msgstr ""
+
+#: src/block/6-fields/index.js:31
+msgid "An example of how to use form component in a block."
+msgstr ""
+
+#: src/block/6-fields/index.js:35
+msgid "Exemples"
+msgstr ""
+
+#: src/block/6-fields/index.js:36
+msgid "Settings"
+msgstr ""
+
+#: src/block/6-fields/index.js:37
+msgid "Scheme"
+msgstr ""
+
+#: src/block/6-fields/index.js:56
+msgid "Check the settings"
+msgstr ""
+
+#: src/block/6-fields/edit.js:74
+#: src/block/6-fields/inspector.js:112
+msgid "Text area control help text"
+msgstr ""
+
+#: src/block/6-fields/inspector.js:102
+msgid "Text Control"
+msgstr ""
+
+#: src/block/6-fields/inspector.js:103
+msgid "Text control help text"
+msgstr ""
+
+#: src/block/6-fields/inspector.js:111
+msgid "Text Area Control"
+msgstr ""
+
+#: src/block/6-fields/inspector.js:120
+msgid "Toggle Control"
+msgstr ""
+
+#: src/block/6-fields/inspector.js:128
+msgid "Select Control"
+msgstr ""
+
+#: src/block/6-fields/inspector.js:45
+msgid "Panel Body Title"
+msgstr ""
+
+#: src/block/6-fields/inspector.js:49
+msgid "Panel Body Copy"
+msgstr ""
+
+#: src/block/6-fields/inspector.js:55
+msgid "Checkbox Control"
+msgstr ""
+
+#: src/block/6-fields/inspector.js:56
+msgid "Check here"
+msgstr ""
+
+#: src/block/6-fields/inspector.js:57
+msgid "Checkbox control help text"
+msgstr ""
+
+#: src/block/6-fields/inspector.js:64
+msgid "Color Panel"
+msgstr ""
+
+#: src/block/6-fields/inspector.js:67
+msgid "Color Picker"
+msgstr ""
+
+#: src/block/6-fields/inspector.js:78
+msgid "Radio Control"
+msgstr ""
+
+#: src/block/6-fields/inspector.js:92
+msgid "Range Control"
+msgstr ""
