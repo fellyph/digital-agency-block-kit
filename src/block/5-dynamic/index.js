@@ -34,7 +34,8 @@ registerBlockType( 'agencykit/dynamic-characters', {
 		const { quantity } = attributes;
 
 		const characters = withSelect( ( select ) => ( {
-			posts: select( 'core' ).getEntityRecords( 'postType', 'agency_product', { per_page: parseInt( quantity, 10 ) } ),
+			posts: select( 'core' ).getEntityRecords( 'postType', 'agency_product',
+				{ per_page: parseInt( quantity, 10 ) } ),
 		} ) )( ( { posts, className } ) => {
 			if ( ! posts ) {
 				return (
@@ -47,14 +48,11 @@ registerBlockType( 'agencykit/dynamic-characters', {
 				return <PanelRow> { __( 'No result' ) } </PanelRow>;
 			}
 			return (
-				<div>
+				<ul>
 					{ posts.map( ( post, index ) => (
-						<figure key={ index } >
-							Test
-							<figcaption>{ post.title.rendered }</figcaption>
-						</figure>
+						<li key={ index } > { post.title.rendered }</li>
 					) ) }
-				</div>
+				</ul>
 			);
 		} );
 

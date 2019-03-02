@@ -10,7 +10,6 @@ const {
 	PanelBody,
 	PanelRow,
 } = wp.components;
-const { Fragment } = wp.element;
 
 registerBlockType( 'agencykit/dynamic-insta', {
 
@@ -32,18 +31,15 @@ registerBlockType( 'agencykit/dynamic-insta', {
 
 	edit: ( { attributes, setAttributes } ) => {
 		const { instagramUser } = attributes;
-
 		return (
-			<Fragment>
-				<PanelBody title={ __( 'InstaBlock' ) } initialOpen={ true } >
-					<PanelRow>
-						<TextControl
-							value={ instagramUser }
-							onChange={ ( newUser ) => setAttributes( { instagramUser: newUser } ) }
-							label={ __( 'Add your instagram user here' ) } />
-					</PanelRow>
-				</PanelBody>
-			</Fragment>
+			<PanelBody title={ __( 'InstaBlock' ) } initialOpen={ true } >
+				<PanelRow>
+					<TextControl
+						value={ instagramUser }
+						onChange={ ( newUser ) => setAttributes( { instagramUser: newUser } ) }
+						label={ __( 'Add your instagram user here' ) } />
+				</PanelRow>
+			</PanelBody>
 		);
 	},
 
