@@ -20,6 +20,6 @@ function render_character( $attributes, $content ) {
     );
 }
 
-register_block_type( 'my-plugin/latest-post', array(
+register_block_type( 'agencykit/dynamic-characters', array(
     'render_callback' => 'render_character',
 ) );

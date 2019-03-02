@@ -1,6 +1,8 @@
 //  Import CSS.
 import './style.scss';
 
+import wp from 'wp';
+
 const { __ } = wp.i18n; // Import __() from wp.i18n
 const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks
 const {
@@ -37,7 +39,7 @@ registerBlockType( 'agencykit/dynamic-insta', {
 					<PanelRow>
 						<TextControl
 							value={ instagramUser }
-							onChange={ newUser => setAttributes( { instagramUser: newUser } ) }
+							onChange={ ( newUser ) => setAttributes( { instagramUser: newUser } ) }
 							label={ __( 'Add your instagram user here' ) } />
 					</PanelRow>
 				</PanelBody>

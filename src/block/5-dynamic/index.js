@@ -50,6 +50,7 @@ registerBlockType( 'agencykit/dynamic-characters', {
 				<div>
 					{ posts.map( ( post, index ) => (
 						<figure key={ index } >
+							Test
 							<figcaption>{ post.title.rendered }</figcaption>
 						</figure>
 					) ) }
