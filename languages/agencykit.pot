@@ -3,15 +3,15 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "X-Generator: babel-plugin-makepot\n"
 
-#: src/block/5-dynamic/index.js:69
+#: src/block/5-dynamic/index.js:67
 msgid "1"
 msgstr ""
 
-#: src/block/5-dynamic/index.js:70
+#: src/block/5-dynamic/index.js:68
 msgid "2"
 msgstr ""
 
-#: src/block/5-dynamic/index.js:71
+#: src/block/5-dynamic/index.js:69
 msgid "3"
 msgstr ""
 
@@ -20,25 +20,19 @@ msgid "Social Card"
 msgstr ""
 
 #: src/block/1-static-insta/index.js:15
-#: src/block/1-static-insta/index.js:13
-#: src/block/2-dynamic-insta/index.js:21
-#: src/block/2-dynamic-insta/index.js:19
+#: src/block/2-dynamic-insta/index.js:20
 #: src/block/4-instafeed/index.js:20
 msgid "Social"
 msgstr ""
 
 #: src/block/1-static-insta/index.js:16
-#: src/block/1-static-insta/index.js:14
-#: src/block/2-dynamic-insta/index.js:22
-#: src/block/2-dynamic-insta/index.js:20
+#: src/block/2-dynamic-insta/index.js:21
 #: src/block/4-instafeed/index.js:21
 msgid "Social media"
 msgstr ""
 
 #: src/block/1-static-insta/index.js:17
-#: src/block/1-static-insta/index.js:15
-#: src/block/2-dynamic-insta/index.js:23
-#: src/block/2-dynamic-insta/index.js:21
+#: src/block/2-dynamic-insta/index.js:22
 #: src/block/4-instafeed/index.js:22
 msgid "Instagram"
 msgstr ""
@@ -51,25 +45,22 @@ msgstr ""
 msgid "Follow me"
 msgstr ""
 
-#: src/block/2-dynamic-insta/index.js:17
+#: src/block/2-dynamic-insta/index.js:16
 msgid "Dynamic Social Card"
 msgstr ""
 
-#: src/block/2-dynamic-insta/index.js:38
-#: src/block/2-dynamic-insta/index.js:36
+#: src/block/2-dynamic-insta/index.js:35
 #: src/block/4-instafeed/index.js:40
 msgid "InstaBlock"
 msgstr ""
 
-#: src/block/2-dynamic-insta/index.js:43
-#: src/block/2-dynamic-insta/index.js:41
+#: src/block/2-dynamic-insta/index.js:40
 #: src/block/3-testimonials/index.js:73
 #: src/block/4-instafeed/index.js:48
 msgid "Add your instagram user here"
 msgstr ""
 
-#: src/block/2-dynamic-insta/index.js:56
-#: src/block/2-dynamic-insta/index.js:54
+#: src/block/2-dynamic-insta/index.js:52
 #: src/block/4-instafeed/index.js:77
 msgid "Follow me: "
 msgstr ""
@@ -122,15 +113,15 @@ msgstr ""
 msgid "Characters"
 msgstr ""
 
-#: src/block/5-dynamic/index.js:47
+#: src/block/5-dynamic/index.js:48
 msgid "No result"
 msgstr ""
 
-#: src/block/5-dynamic/index.js:62
+#: src/block/5-dynamic/index.js:60
 msgid "Character"
 msgstr ""
 
-#: src/block/5-dynamic/index.js:63
+#: src/block/5-dynamic/index.js:61
 msgid "List your favorite character"
 msgstr ""
 
