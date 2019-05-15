@@ -15,6 +15,7 @@ registerBlockType( 'agencykit/static-insta', {
 		__( 'Social' ),
 		__( 'Social media' ),
 		__( 'Instagram' ),
+		__( 'Social Share' ),
 	],
 
 	edit: ( { className } ) => {
@@ -25,11 +26,14 @@ registerBlockType( 'agencykit/static-insta', {
 		);
 	},
 
-	save: ( { className } ) => {
+	save: ( { className, props } ) => {
+		console.log( props );
 		return (
 			<div className={ className }>
 				<h3 className={ 'title' }>
-					<a href="http://instagram.com/fellyph"> { __( 'Follow me' ) }</a>
+					<a href="https://twitter.com/share?url=https%3A%2F%2Fblog.fellyph.com.br%2F&text=Blog%20fellyph%20Cintra&via=fellyph">{ __( 'Tweet a link to this page' ) } props</a>
+					<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog.fellyph.com.br%2F">{ __( 'Share on Facebook' ) }</a>
+					<a href="http://www.linkedin.com/shareArticle?url=https%3A%2F%2Fblog.fellyph.com.br%2F&title=Blog%20fellyph%20Cintra">{ __( 'Share on Linkedin' ) }</a>
 				</h3>
 			</div>
 		);

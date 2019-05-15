@@ -9,7 +9,7 @@
  * Webpack is compiling as the input file.
  */
 
-import './block/1-static-insta/index';
+import './block/1-static-share/index';
 import './block/2-dynamic-insta/index';
 import './block/3-testimonials/index';
 import './block/4-instafeed/index';
