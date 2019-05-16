@@ -6,7 +6,7 @@ import wp from 'wp';
 const { __ } = wp.i18n; // Import __() from wp.i18n
 const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks
 
-registerBlockType( 'agencykit/static-insta', {
+registerBlockType( 'agencykit/static-social', {
 
 	title: __( 'Social Card' ),
 	icon: 'shield',
@@ -21,7 +21,11 @@ registerBlockType( 'agencykit/static-insta', {
 	edit: ( { className } ) => {
 		return (
 			<div className={ className }>
-				<h3 className={ 'title' }>{ __( 'Instagram profile' ) }</h3>
+				<h3 className={ 'title' }>
+					<a href="https://twitter.com/share?url=https%3A%2F%2Fblog.fellyph.com.br%2F&text=Blog%20fellyph%20Cintra&via=fellyph">{ __( 'Tweet it' ) }</a>
+					<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog.fellyph.com.br%2F">{ __( 'Share on Facebook' ) }</a>
+					<a href="http://www.linkedin.com/shareArticle?url=https%3A%2F%2Fblog.fellyph.com.br%2F&title=Blog%20fellyph%20Cintra">{ __( 'Share on Linkedin' ) }</a>
+				</h3>
 			</div>
 		);
 	},
@@ -30,7 +34,7 @@ registerBlockType( 'agencykit/static-insta', {
 		return (
 			<div className={ className }>
 				<h3 className={ 'title' }>
-					<a href="https://twitter.com/share?url=https%3A%2F%2Fblog.fellyph.com.br%2F&text=Blog%20fellyph%20Cintra&via=fellyph">{ __( 'Tweet a link to this page' ) }</a>
+					<a href="https://twitter.com/share?url=https%3A%2F%2Fblog.fellyph.com.br%2F&text=Blog%20fellyph%20Cintra&via=fellyph">{ __( 'Tweet it' ) }</a>
 					<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog.fellyph.com.br%2F">{ __( 'Share on Facebook' ) }</a>
 					<a href="http://www.linkedin.com/shareArticle?url=https%3A%2F%2Fblog.fellyph.com.br%2F&title=Blog%20fellyph%20Cintra">{ __( 'Share on Linkedin' ) }</a>
 				</h3>

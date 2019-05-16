@@ -1,24 +1,12 @@
 $icon-url: '../assets/img/instagram-icon.svg';
 
-.wp-block-agencykit-static-insta {
+.wp-block-agencykit-static-social {
 	background: linear-gradient( #400080, transparent),
 							linear-gradient( 200deg, #d047d1, #ff0000,    #ffff00);
 	padding: 2em 1em;
 
 	.title {
 		color: white;
-		display: flex;
-		&:before {
-			content: "";
-			display: block;
-			background: url($icon-url);
-			height: 50px;
-			width: 50px;
-			background-size: contain;
-			margin-right: 0.5em;
-			background-repeat: none;
-		}
-
 		a {
 			color: white;
 			text-transform: none;

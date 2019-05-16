@@ -21,39 +21,38 @@ msgstr ""
 
 #: src/block/1-static-share/index.js:15
 #: src/block/2-dynamic-insta/index.js:20
-#: src/block/4-instafeed/index.js:20
+#: src/block/4-data-api/index.js:15
 msgid "Social"
 msgstr ""
 
 #: src/block/1-static-share/index.js:16
 #: src/block/2-dynamic-insta/index.js:21
-#: src/block/4-instafeed/index.js:21
+#: src/block/4-data-api/index.js:16
 msgid "Social media"
 msgstr ""
 
 #: src/block/1-static-share/index.js:17
 #: src/block/2-dynamic-insta/index.js:22
-#: src/block/4-instafeed/index.js:22
+#: src/block/4-data-api/index.js:17
 msgid "Instagram"
 msgstr ""
 
 #: src/block/1-static-share/index.js:18
+#: src/block/4-data-api/index.js:18
 msgid "Social Share"
 msgstr ""
 
-#: src/block/1-static-share/index.js:24
-msgid "Instagram profile"
+#: src/block/1-static-share/index.js:37
+msgid "Tweet it"
 msgstr ""
 
-#: src/block/1-static-share/index.js:33
-msgid "Tweet a link to this page"
-msgstr ""
-
-#: src/block/1-static-share/index.js:34
+#: src/block/1-static-share/index.js:38
+#: src/block/4-data-api/index.js:35
 msgid "Share on Facebook"
 msgstr ""
 
-#: src/block/1-static-share/index.js:35
+#: src/block/1-static-share/index.js:39
+#: src/block/4-data-api/index.js:36
 msgid "Share on Linkedin"
 msgstr ""
 
@@ -62,18 +61,15 @@ msgid "Dynamic Social Card"
 msgstr ""
 
 #: src/block/2-dynamic-insta/index.js:35
-#: src/block/4-instafeed/index.js:40
 msgid "InstaBlock"
 msgstr ""
 
 #: src/block/2-dynamic-insta/index.js:40
 #: src/block/3-testimonials/index.js:73
-#: src/block/4-instafeed/index.js:48
 msgid "Add your instagram user here"
 msgstr ""
 
 #: src/block/2-dynamic-insta/index.js:52
-#: src/block/4-instafeed/index.js:77
 msgid "Follow me: "
 msgstr ""
 
@@ -105,20 +101,16 @@ msgstr ""
 msgid "Remove"
 msgstr ""
 
-#: src/block/4-instafeed/index.js:16
-msgid "Instagram Embed"
+#: src/block/4-data-api/index.js:11
+msgid "Data-api Social Card"
 msgstr ""
 
-#: src/block/4-instafeed/index.js:41
-msgid "add your photo here"
+#: src/block/4-data-api/index.js:24
+msgid "Instagram profile"
 msgstr ""
 
-#: src/block/4-instafeed/index.js:55
-msgid "Small"
-msgstr ""
-
-#: src/block/4-instafeed/index.js:57
-msgid "Medium"
+#: src/block/4-data-api/index.js:34
+msgid "Tweet a link to this page"
 msgstr ""
 
 #: src/block/5-dynamic/index.js:23

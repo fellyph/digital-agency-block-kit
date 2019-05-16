@@ -6,9 +6,9 @@ import wp from 'wp';
 const { __ } = wp.i18n; // Import __() from wp.i18n
 const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks
 
-registerBlockType( 'agencykit/static-insta', {
+registerBlockType( 'agencykit/dynamic-social', {
 
-	title: __( 'Social Card' ),
+	title: __( 'Data-api Social Card' ),
 	icon: 'shield',
 	category: 'common',
 	keywords: [
