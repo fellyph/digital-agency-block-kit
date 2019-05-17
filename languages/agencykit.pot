@@ -15,45 +15,60 @@ msgstr ""
 msgid "3"
 msgstr ""
 
-#: src/block/1-static-share/index.js:11
-msgid "Social Card"
+#: src/block/1-static-share-pwa/index.js:11
+msgid "Social Card - PWA"
 msgstr ""
 
+#: src/block/1-static-share-pwa/index.js:15
 #: src/block/1-static-share/index.js:15
 #: src/block/2-dynamic-insta/index.js:20
 #: src/block/4-data-api/index.js:15
 msgid "Social"
 msgstr ""
 
+#: src/block/1-static-share-pwa/index.js:16
 #: src/block/1-static-share/index.js:16
 #: src/block/2-dynamic-insta/index.js:21
 #: src/block/4-data-api/index.js:16
 msgid "Social media"
 msgstr ""
 
+#: src/block/1-static-share-pwa/index.js:17
 #: src/block/1-static-share/index.js:17
 #: src/block/2-dynamic-insta/index.js:22
 #: src/block/4-data-api/index.js:17
 msgid "Instagram"
 msgstr ""
 
+#: src/block/1-static-share-pwa/index.js:18
 #: src/block/1-static-share/index.js:18
 #: src/block/4-data-api/index.js:18
 msgid "Social Share"
 msgstr ""
 
+#: src/block/1-static-share-pwa/index.js:37
 #: src/block/1-static-share/index.js:37
 msgid "Tweet it"
 msgstr ""
 
+#: src/block/1-static-share-pwa/index.js:38
 #: src/block/1-static-share/index.js:38
 #: src/block/4-data-api/index.js:35
 msgid "Share on Facebook"
 msgstr ""
 
+#: src/block/1-static-share-pwa/index.js:39
 #: src/block/1-static-share/index.js:39
 #: src/block/4-data-api/index.js:36
 msgid "Share on Linkedin"
+msgstr ""
+
+#: src/block/1-static-share-pwa/index.js:46
+msgid "Share it"
+msgstr ""
+
+#: src/block/1-static-share/index.js:11
+msgid "Social Card"
 msgstr ""
 
 #: src/block/2-dynamic-insta/index.js:16

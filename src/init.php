@@ -59,7 +59,7 @@ function frontend_assets() {
 	wp_enqueue_script(
 		'agency-kit-js',
 		plugins_url( 'dist/blocks.frontend.js', dirname( __FILE__ ) ),
-		array('wp-element', 'jquery'),
+		array('wp-element', 'wp-i18n','wp-blocks', 'jquery'),
 		filemtime( plugin_dir_path( __DIR__ )  . 'dist/blocks.frontend.js' ),
 		true
 	);

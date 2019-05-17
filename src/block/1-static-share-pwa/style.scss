@@ -1,6 +1,5 @@
 .wp-block-agencykit-static-social-pwa {
-	background: linear-gradient( #400080, transparent),
-							linear-gradient( 200deg, #d047d1, #ff0000,    #ffff00);
+	background: #ffff00;
 	padding: 2em 1em;
 
 	.title {
@@ -15,10 +14,11 @@
 	}
 
 	.social-links {
-		padding: 0;
+		padding: 1em;
 		margin: 0;
 		li {
 			display: inline-block;
+			margin: 0 1em;
 		}
 	}
 
