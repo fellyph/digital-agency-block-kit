@@ -1,0 +1,3 @@
+if ( 'share' in navigator ) {
+
+}

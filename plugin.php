@@ -1,10 +1,10 @@
 <?php
 /**
- * Plugin Name: products — CGB Gutenberg Block Plugin
- * Plugin URI: https://github.com/ahmadawais/create-guten-block/
- * Description: products — is a Gutenberg plugin created via create-guten-block.
- * Author: mrahmadawais, maedahbatool
- * Author URI: https://AhmadAwais.com/
+ * Plugin Name: Digital agency kit
+ * Plugin URI: https://blog.fellyph.com.br
+ * Description: Digital agency kit — is a Gutenberg plugin created via create-guten-block.
+ * Author: fellyph
+ * Author URI: https://blog.fellyph.com.br
  * Version: 1.0.0
  * License: GPL2+
  * License URI: https://www.gnu.org/licenses/gpl-2.0.txt

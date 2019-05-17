@@ -21,11 +21,11 @@ registerBlockType( 'agencykit/static-social', {
 	edit: ( { className } ) => {
 		return (
 			<div className={ className }>
-				<h3 className={ 'title' }>
-					<a href="https://twitter.com/share?url=https%3A%2F%2Fblog.fellyph.com.br%2F&text=Blog%20fellyph%20Cintra&via=fellyph">{ __( 'Tweet it' ) }</a>
-					<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog.fellyph.com.br%2F">{ __( 'Share on Facebook' ) }</a>
-					<a href="http://www.linkedin.com/shareArticle?url=https%3A%2F%2Fblog.fellyph.com.br%2F&title=Blog%20fellyph%20Cintra">{ __( 'Share on Linkedin' ) }</a>
-				</h3>
+				<ul className={ 'socialList' }>
+					<li>{ __( 'Tweet it' ) }</li>
+					<li>{ __( 'Share on Facebook' ) }</li>
+					<li>{ __( 'Share on Linkedin' ) }</li>
+				</ul>
 			</div>
 		);
 	},
@@ -33,11 +33,11 @@ registerBlockType( 'agencykit/static-social', {
 	save: ( { className } ) => {
 		return (
 			<div className={ className }>
-				<h3 className={ 'title' }>
-					<a href="https://twitter.com/share?url=https%3A%2F%2Fblog.fellyph.com.br%2F&text=Blog%20fellyph%20Cintra&via=fellyph">{ __( 'Tweet it' ) }</a>
-					<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog.fellyph.com.br%2F">{ __( 'Share on Facebook' ) }</a>
-					<a href="http://www.linkedin.com/shareArticle?url=https%3A%2F%2Fblog.fellyph.com.br%2F&title=Blog%20fellyph%20Cintra">{ __( 'Share on Linkedin' ) }</a>
-				</h3>
+				<ul className={ 'title' }>
+					<li><a href="https://twitter.com/share?url=https%3A%2F%2Fblog.fellyph.com.br%2F&text=Blog%20fellyph%20Cintra&via=fellyph">{ __( 'Tweet it' ) }</a></li>
+					<li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog.fellyph.com.br%2F">{ __( 'Share on Facebook' ) }</a></li>
+					<li><a href="http://www.linkedin.com/shareArticle?url=https%3A%2F%2Fblog.fellyph.com.br%2F&title=Blog%20fellyph%20Cintra">{ __( 'Share on Linkedin' ) }</a></li>
+				</ul>
 			</div>
 		);
 	},
