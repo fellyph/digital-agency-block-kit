@@ -1,25 +1,22 @@
+@import "@material/button/mdc-button";
+@import "@material/card/mdc-card";
+
 .wp-block-agencykit-dynamic-insta  {
-	background: linear-gradient( #400080, transparent),
-							linear-gradient( 200deg, #d047d1, #ff0000,    #ffff00);
 	padding: 2em 1em;
 
-	.title {
-		color: white;
-		display: flex;
-		&:before {
-			content: "";
-			display: block;
-			height: 50px;
-			width: 50px;
-			background-size: contain;
-			margin-right: 0.5em;
+	.mdc-button {
+		text-decoration: none;
+		margin-bottom: 1em;
+
+		&:hover {
+			color: white;
 		}
 
-		a {
-			color: white;
-			text-transform: none;
+		.entry-content & {
+			text-decoration: none;
+
 			&:hover {
-				text-transform: underline;
+				color: white;
 			}
 		}
 	}

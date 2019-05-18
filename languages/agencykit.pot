@@ -46,34 +46,37 @@ msgstr ""
 msgid "Social Share"
 msgstr ""
 
-#: src/block/1-static-share-pwa/index.js:41
 #: src/block/1-static-share-pwa/index.js:43
-#: src/block/1-static-share-pwa/index.js:51
+#: src/block/1-static-share-pwa/index.js:42
+#: src/block/1-static-share-pwa/index.js:41
 #: src/block/1-static-share/index.js:41
+#: src/block/4-data-api/index.js:33
 msgid "Tweet it"
 msgstr ""
 
-#: src/block/1-static-share-pwa/index.js:44
 #: src/block/1-static-share-pwa/index.js:48
-#: src/block/1-static-share-pwa/index.js:56
+#: src/block/1-static-share-pwa/index.js:47
+#: src/block/1-static-share-pwa/index.js:46
+#: src/block/1-static-share-pwa/index.js:45
+#: src/block/1-static-share-pwa/index.js:44
 #: src/block/1-static-share/index.js:44
-#: src/block/1-static-share/index.js:48
-#: src/block/1-static-share/index.js:56
-#: src/block/4-data-api/index.js:35
+#: src/block/4-data-api/index.js:36
 msgid "Share on Facebook"
 msgstr ""
 
-#: src/block/1-static-share-pwa/index.js:47
 #: src/block/1-static-share-pwa/index.js:53
-#: src/block/1-static-share-pwa/index.js:61
+#: src/block/1-static-share-pwa/index.js:52
+#: src/block/1-static-share-pwa/index.js:51
+#: src/block/1-static-share-pwa/index.js:50
+#: src/block/1-static-share-pwa/index.js:49
+#: src/block/1-static-share-pwa/index.js:48
+#: src/block/1-static-share-pwa/index.js:47
 #: src/block/1-static-share/index.js:47
-#: src/block/1-static-share/index.js:53
-#: src/block/1-static-share/index.js:61
-#: src/block/4-data-api/index.js:36
+#: src/block/4-data-api/index.js:39
 msgid "Share on Linkedin"
 msgstr ""
 
-#: src/block/1-static-share-pwa/index.js:50
+#: src/block/1-static-share-pwa/index.js:56
 msgid "Share"
 msgstr ""
 
@@ -94,7 +97,7 @@ msgstr ""
 msgid "Add your instagram user here"
 msgstr ""
 
-#: src/block/2-dynamic-insta/index.js:52
+#: src/block/2-dynamic-insta/index.js:56
 msgid "Follow me: "
 msgstr ""
 
@@ -132,10 +135,6 @@ msgstr ""
 
 #: src/block/4-data-api/index.js:24
 msgid "Instagram profile"
-msgstr ""
-
-#: src/block/4-data-api/index.js:34
-msgid "Tweet a link to this page"
 msgstr ""
 
 #: src/block/5-dynamic/index.js:23

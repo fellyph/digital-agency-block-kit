@@ -7,6 +7,19 @@
 
 	.mdc-button {
 		text-decoration: none;
+		margin-bottom: 1em;
+
+		&:hover {
+			color: white;
+		}
+
+		.entry-content & {
+			text-decoration: none;
+
+			&:hover {
+				color: white;
+			}
+		}
 	}
 
 	.social-links {

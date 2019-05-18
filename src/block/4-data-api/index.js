@@ -27,14 +27,17 @@ registerBlockType( 'agencykit/dynamic-social', {
 	},
 
 	save: ( { className, props } ) => {
-		console.log( props );
 		return (
-			<div className={ className }>
-				<h3 className={ 'title' }>
-					<a href="https://twitter.com/share?url=https%3A%2F%2Fblog.fellyph.com.br%2F&text=Blog%20fellyph%20Cintra&via=fellyph">{ __( 'Tweet a link to this page' ) } props</a>
-					<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog.fellyph.com.br%2F">{ __( 'Share on Facebook' ) }</a>
-					<a href="http://www.linkedin.com/shareArticle?url=https%3A%2F%2Fblog.fellyph.com.br%2F&title=Blog%20fellyph%20Cintra">{ __( 'Share on Linkedin' ) }</a>
-				</h3>
+			<div className={ className + ' mdc-card' }>
+				<a href="https://twitter.com/share?url=https%3A%2F%2Fblog.fellyph.com.br%2F&text=Blog%20fellyph%20Cintra&via=fellyph" className={ 'mdc-button' } >
+					<span className={ 'mdc-button__label' } >{ __( 'Tweet it' ) }</span>
+				</a>
+				<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog.fellyph.com.br%2F" className={ 'mdc-button' }>
+					<span className={ 'mdc-button__label' } >{ __( 'Share on Facebook' ) }</span>
+				</a>
+				<a href="http://www.linkedin.com/shareArticle?url=https%3A%2F%2Fblog.fellyph.com.br%2F&title=Blog%20fellyph%20Cintra" className={ 'mdc-button' }>
+					<span className={ 'mdc-button__label' } >{ __( 'Share on Linkedin' ) }</span>
+				</a>
 			</div>
 		);
 	},
