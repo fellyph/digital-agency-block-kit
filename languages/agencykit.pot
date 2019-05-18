@@ -60,7 +60,7 @@ msgstr ""
 
 #: src/block/1-static-share-pwa/index.js:53
 #: src/block/1-static-share/index.js:47
-#: src/block/4-data-api/index.js:56
+#: src/block/4-data-api/index.js:57
 msgid "Share on Linkedin"
 msgstr ""
 
@@ -122,6 +122,7 @@ msgid "Data-api Social Card"
 msgstr ""
 
 #: src/block/4-data-api/index.js:42
+#: src/block/7-barcode/index.js:30
 msgid "Data API social Card"
 msgstr ""
 
@@ -141,106 +142,18 @@ msgstr ""
 msgid "List your favorite character"
 msgstr ""
 
-#: src/block/6-fields/edit.js:101
-msgid "TextArea component"
+#: src/block/7-barcode/index.js:15
+msgid "Bar code"
 msgstr ""
 
-#: src/block/6-fields/edit.js:102
-msgid "Text Area Component"
+#: src/block/7-barcode/index.js:16
+msgid "Camera"
 msgstr ""
 
-#: src/block/6-fields/edit.js:108
-msgid "Toggle component"
+#: src/block/7-barcode/index.js:22
+msgid "Barcode Card"
 msgstr ""
 
-#: src/block/6-fields/edit.js:110
-msgid "Toggle Component"
-msgstr ""
-
-#: src/block/6-fields/edit.js:119
-msgid "Base Component"
-msgstr ""
-
-#: src/block/6-fields/edit.js:125
-msgid "Text Component"
-msgstr ""
-
-#: src/block/6-fields/edit.js:126
-msgid "Text for some instruction"
-msgstr ""
-
-#: src/block/6-fields/edit.js:45
-msgid "File upload component"
-msgstr ""
-
-#: src/block/6-fields/edit.js:50
-msgid "Upload image"
-msgstr ""
-
-#: src/block/6-fields/edit.js:53
-msgid "Notice component"
-msgstr ""
-
-#: src/block/6-fields/edit.js:55
-msgid "Something wrong happen"
-msgstr ""
-
-#: src/block/6-fields/edit.js:59
-msgid "maybe is fine"
-msgstr ""
-
-#: src/block/6-fields/edit.js:62
-msgid "Checkbox component"
-msgstr ""
-
-#: src/block/6-fields/edit.js:64
-msgid "Checkbox Component"
-msgstr ""
-
-#: src/block/6-fields/edit.js:65
-msgid "Check it!"
-msgstr ""
-
-#: src/block/6-fields/edit.js:70
-msgid "Color palette component"
-msgstr ""
-
-#: src/block/6-fields/edit.js:76
-msgid "Radio component"
-msgstr ""
-
-#: src/block/6-fields/edit.js:78
-msgid "Radio Component"
-msgstr ""
-
-#: src/block/6-fields/edit.js:92
-msgid "Range component"
-msgstr ""
-
-#: src/block/6-fields/edit.js:94
-msgid "Range Component"
-msgstr ""
-
-#: src/block/6-fields/index.js:30
-msgid "Componentes Examples"
-msgstr ""
-
-#: src/block/6-fields/index.js:31
-msgid "An example of how to use form component in a block."
-msgstr ""
-
-#: src/block/6-fields/index.js:35
-msgid "Exemples"
-msgstr ""
-
-#: src/block/6-fields/index.js:36
-msgid "Settings"
-msgstr ""
-
-#: src/block/6-fields/index.js:37
-msgid "Scheme"
-msgstr ""
-
-#: src/block/6-fields/index.js:56
-msgid "Check the settings"
+#: src/block/7-barcode/index.js:32
+msgid "Capture"
 msgstr ""

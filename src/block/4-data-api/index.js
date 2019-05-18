@@ -50,7 +50,8 @@ registerBlockType( 'agencykit/apidata-social', {
 					className={ 'mdc-button mdc-button--raised' }>
 					<span className={ 'mdc-button__label' } >{ __( 'Share on Facebook' ) }</span>
 				</a>
-				<a href={ `http://www.linkedin.com/shareArticle?url=${ select( 'core/editor' ).getPermalink() }&title=Blog%20fellyph%20Cintra` }
+				<a href={ `http://www.linkedin.com/shareArticle?url=${ select( 'core/editor' ).getPermalink() }
+					&title=Blog%20fellyph%20Cintra` }
 					target="_blank"
 					className={ 'mdc-button mdc-button--raised' }>
 					<span className={ 'mdc-button__label' } >{ __( 'Share on Linkedin' ) }</span>
