@@ -10,21 +10,22 @@ const editBlocksCSSPlugin = new ExtractTextPlugin( {
 
 // Configuration for the ExtractTextPlugin.
 const extractConfig = {
-	use: [ {
-		loader: 'raw-loader'
-	},
-	{
-		loader: 'postcss-loader',
-		options: {
-			plugins: [ require('autoprefixer') ],
+	use: [
+		{ loader: 'raw-loader' },
+		{ loader: 'extract-loader' },
+		{ loader: 'css-loader' },
+		{
+			loader: 'postcss-loader',
+			options: {
+				plugins: [ require('autoprefixer') ]
+			},
 		},
-	},
-	{
-		loader: 'sass-loader',
-		query: {
-			outputStyle: 'compressed',
-		},
-	} ],
+		{
+			loader: 'sass-loader',
+			options: {
+				includePaths: ['./node_modules']
+			}
+		} ],
 };
 
 module.exports = {

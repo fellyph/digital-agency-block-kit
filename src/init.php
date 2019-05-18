@@ -63,9 +63,10 @@ function frontend_assets() {
 		filemtime( plugin_dir_path( __DIR__ )  . 'dist/blocks.frontend.js' ),
 		true
 	);
-
+	wp_register_style('material_icons', '//fonts.googleapis.com/icon?family=Material+Icons' );
 	wp_register_style( 'slick_css', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css' );
 	wp_enqueue_style('slick_css');
+	wp_enqueue_style('material_icons');
 }
 
-add_action( "wp_enqueue_scripts", 'frontend_assets' );
+add_action( 'wp_enqueue_scripts', 'frontend_assets' );

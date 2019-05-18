@@ -1,16 +1,12 @@
-.wp-block-agencykit-static-social-pwa {
-	background: #ffff00;
-	padding: 2em 1em;
+@import "@material/icon-button/mdc-icon-button";
+@import "@material/button/mdc-button";
+@import "@material/card/mdc-card";
 
-	.title {
-		color: white;
-		a {
-			color: white;
-			text-transform: none;
-			&:hover {
-				text-transform: underline;
-			}
-		}
+.wp-block-agencykit-static-social-pwa {
+	padding: 1em;
+
+	.mdc-button {
+		text-decoration: none;
 	}
 
 	.social-links {

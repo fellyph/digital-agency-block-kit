@@ -46,25 +46,35 @@ msgstr ""
 msgid "Social Share"
 msgstr ""
 
-#: src/block/1-static-share-pwa/index.js:37
-#: src/block/1-static-share/index.js:37
+#: src/block/1-static-share-pwa/index.js:41
+#: src/block/1-static-share-pwa/index.js:43
+#: src/block/1-static-share-pwa/index.js:51
+#: src/block/1-static-share/index.js:41
 msgid "Tweet it"
 msgstr ""
 
-#: src/block/1-static-share-pwa/index.js:38
-#: src/block/1-static-share/index.js:38
+#: src/block/1-static-share-pwa/index.js:44
+#: src/block/1-static-share-pwa/index.js:48
+#: src/block/1-static-share-pwa/index.js:56
+#: src/block/1-static-share/index.js:44
+#: src/block/1-static-share/index.js:48
+#: src/block/1-static-share/index.js:56
 #: src/block/4-data-api/index.js:35
 msgid "Share on Facebook"
 msgstr ""
 
-#: src/block/1-static-share-pwa/index.js:39
-#: src/block/1-static-share/index.js:39
+#: src/block/1-static-share-pwa/index.js:47
+#: src/block/1-static-share-pwa/index.js:53
+#: src/block/1-static-share-pwa/index.js:61
+#: src/block/1-static-share/index.js:47
+#: src/block/1-static-share/index.js:53
+#: src/block/1-static-share/index.js:61
 #: src/block/4-data-api/index.js:36
 msgid "Share on Linkedin"
 msgstr ""
 
-#: src/block/1-static-share-pwa/index.js:46
-msgid "Share it"
+#: src/block/1-static-share-pwa/index.js:50
+msgid "Share"
 msgstr ""
 
 #: src/block/1-static-share/index.js:11
