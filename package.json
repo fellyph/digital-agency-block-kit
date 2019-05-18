@@ -38,6 +38,7 @@
     "@material/card": "^2.1.1",
     "@material/grid-list": "^1.1.0",
     "@material/icon-button": "^2.1.1",
+    "@material/typography": "^1.0.0",
     "lit-element": "^2.1.0",
     "react-instagram-embed": "^1.5.0",
     "slick-carousel": "^1.8.1"

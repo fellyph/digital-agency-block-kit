@@ -1,27 +1,15 @@
-.wp-block-agencykit-static-social {
-	background: linear-gradient( #400080, transparent),
-							linear-gradient( 200deg, #d047d1, #ff0000,    #ffff00);
+@import "@material/button/mdc-button";
+@import "@material/card/mdc-card";
+@import "@material/typography/mdc-typography";
+
+.wp-block-agencykit-apidata-social  {
 	padding: 2em 1em;
 
-	.title {
-		color: white;
-		display: flex;
-		&:before {
-			content: "";
-			display: block;
-			height: 50px;
-			width: 50px;
-			background-size: contain;
-			margin-right: 0.5em;
-			background-repeat: none;
-		}
-
-		a {
-			color: white;
-			text-transform: none;
-			&:hover {
-				text-transform: underline;
-			}
+	.mdc-button {
+		text-decoration: none;
+		margin-bottom: 1em;
+		.entry-content & {
+			text-decoration: none;
 		}
 	}
 }

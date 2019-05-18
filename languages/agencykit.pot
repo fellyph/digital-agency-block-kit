@@ -22,57 +22,45 @@ msgstr ""
 #: src/block/1-static-share-pwa/index.js:15
 #: src/block/1-static-share/index.js:15
 #: src/block/2-dynamic-insta/index.js:20
-#: src/block/4-data-api/index.js:15
+#: src/block/4-data-api/index.js:16
 msgid "Social"
 msgstr ""
 
 #: src/block/1-static-share-pwa/index.js:16
 #: src/block/1-static-share/index.js:16
 #: src/block/2-dynamic-insta/index.js:21
-#: src/block/4-data-api/index.js:16
+#: src/block/4-data-api/index.js:17
 msgid "Social media"
 msgstr ""
 
 #: src/block/1-static-share-pwa/index.js:17
 #: src/block/1-static-share/index.js:17
 #: src/block/2-dynamic-insta/index.js:22
-#: src/block/4-data-api/index.js:17
+#: src/block/4-data-api/index.js:18
 msgid "Instagram"
 msgstr ""
 
 #: src/block/1-static-share-pwa/index.js:18
 #: src/block/1-static-share/index.js:18
-#: src/block/4-data-api/index.js:18
+#: src/block/4-data-api/index.js:19
 msgid "Social Share"
 msgstr ""
 
 #: src/block/1-static-share-pwa/index.js:43
-#: src/block/1-static-share-pwa/index.js:42
-#: src/block/1-static-share-pwa/index.js:41
 #: src/block/1-static-share/index.js:41
-#: src/block/4-data-api/index.js:33
+#: src/block/4-data-api/index.js:46
 msgid "Tweet it"
 msgstr ""
 
 #: src/block/1-static-share-pwa/index.js:48
-#: src/block/1-static-share-pwa/index.js:47
-#: src/block/1-static-share-pwa/index.js:46
-#: src/block/1-static-share-pwa/index.js:45
-#: src/block/1-static-share-pwa/index.js:44
 #: src/block/1-static-share/index.js:44
-#: src/block/4-data-api/index.js:36
+#: src/block/4-data-api/index.js:51
 msgid "Share on Facebook"
 msgstr ""
 
 #: src/block/1-static-share-pwa/index.js:53
-#: src/block/1-static-share-pwa/index.js:52
-#: src/block/1-static-share-pwa/index.js:51
-#: src/block/1-static-share-pwa/index.js:50
-#: src/block/1-static-share-pwa/index.js:49
-#: src/block/1-static-share-pwa/index.js:48
-#: src/block/1-static-share-pwa/index.js:47
 #: src/block/1-static-share/index.js:47
-#: src/block/4-data-api/index.js:39
+#: src/block/4-data-api/index.js:56
 msgid "Share on Linkedin"
 msgstr ""
 
@@ -97,7 +85,7 @@ msgstr ""
 msgid "Add your instagram user here"
 msgstr ""
 
-#: src/block/2-dynamic-insta/index.js:56
+#: src/block/2-dynamic-insta/index.js:57
 msgid "Follow me: "
 msgstr ""
 
@@ -129,12 +117,12 @@ msgstr ""
 msgid "Remove"
 msgstr ""
 
-#: src/block/4-data-api/index.js:11
+#: src/block/4-data-api/index.js:12
 msgid "Data-api Social Card"
 msgstr ""
 
-#: src/block/4-data-api/index.js:24
-msgid "Instagram profile"
+#: src/block/4-data-api/index.js:42
+msgid "Data API social Card"
 msgstr ""
 
 #: src/block/5-dynamic/index.js:23
