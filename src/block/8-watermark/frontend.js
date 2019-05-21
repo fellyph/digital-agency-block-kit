@@ -128,7 +128,16 @@ if ( captureButton ) {
 	captureButton.addEventListener( 'click', () => {
 		// Draw the video frame to the canvas.
 		context.drawImage( player, 0, 0, canvas.width, canvas.height );
-		context.drawImage( image, 0, 0, canvas.width, 80 );
+		context.drawImage( image, 0, 205, canvas.width, 35 );
+	} );
+
+	canvas.addEventListener( 'click', () => {
+		// save image as png
+		const img = canvas.toDataURL( 'image/png' );
+		const link = document.createElement( 'a' );
+		link.download = 'wordcamp-lisboa.png';
+		link.href = img;
+		link.click();
 	} );
 
 	// Attach the video stream to the video element and autoplay.

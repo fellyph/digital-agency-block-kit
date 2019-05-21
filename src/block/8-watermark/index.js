@@ -8,11 +8,12 @@ const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.b
 
 registerBlockType( 'agencykit/watermark-block', {
 	title: __( 'Watermark block' ),
-	icon: 'camera-alt',
+	icon: 'camera',
 	category: 'common',
 	keywords: [
 		__( 'Watermark' ),
 		__( 'Camera' ),
+		__( 'Media' ),
 	],
 
 	edit: ( { className } ) => {
@@ -26,7 +27,7 @@ registerBlockType( 'agencykit/watermark-block', {
 	save: ( { className } ) => {
 		return (
 			<div className={ className + ' mdc-card' }>
-				<h2 className={ 'mdc-typography mdc-typography--headline6' } >{ __( 'Data API social Card' ) }</h2>
+				<h2 className={ 'mdc-typography mdc-typography--headline6' } >{ __( 'Watermark block' ) }</h2>
 				<video id="player-watermark" controls autoplay width="320" height="240"></video>
 				<button id="capture-watermark" className={ 'mdc-button' }>{ __( 'Capture' ) }</button>
 				<canvas id="canvas-watermark" width="320" height="240" className={ 'barcode-canvas' }></canvas>

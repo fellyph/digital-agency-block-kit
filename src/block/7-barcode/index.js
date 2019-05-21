@@ -9,7 +9,7 @@ const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.b
 registerBlockType( 'agencykit/barcode-card', {
 
 	title: __( 'Barcode Card' ),
-	icon: 'camera-alt',
+	icon: 'camera',
 	category: 'common',
 	keywords: [
 		__( 'Bar code' ),

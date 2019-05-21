@@ -122,7 +122,6 @@ msgid "Data-api Social Card"
 msgstr ""
 
 #: src/block/4-data-api/index.js:42
-#: src/block/7-barcode/index.js:30
 msgid "Data API social Card"
 msgstr ""
 
@@ -142,18 +141,22 @@ msgstr ""
 msgid "List your favorite character"
 msgstr ""
 
-#: src/block/7-barcode/index.js:15
-msgid "Bar code"
+#: src/block/8-watermark/index.js:14
+msgid "Watermark"
 msgstr ""
 
-#: src/block/7-barcode/index.js:16
+#: src/block/8-watermark/index.js:15
 msgid "Camera"
 msgstr ""
 
-#: src/block/7-barcode/index.js:22
-msgid "Barcode Card"
+#: src/block/8-watermark/index.js:16
+msgid "Media"
 msgstr ""
 
-#: src/block/7-barcode/index.js:32
+#: src/block/8-watermark/index.js:30
+msgid "Watermark block"
+msgstr ""
+
+#: src/block/8-watermark/index.js:32
 msgid "Capture"
 msgstr ""
